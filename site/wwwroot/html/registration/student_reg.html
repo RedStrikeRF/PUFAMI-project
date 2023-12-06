@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Авторизоваться</title>
-    <link rel="stylesheet" href="/css/log_in.css">
-    <script defer src="/script/log_in.js"></script>
+    <title>Зарегистрироваться как ученик</title>
+    <link rel="stylesheet" href="/css/registration.css">
 </head>
 <body>
     <header class="header flex">
@@ -19,15 +18,12 @@
     </header>
 
     <main class="main flex">
-        <div class="container flex">
-            <div class="log-in-form flex">
-                <h2 class="log-in-title">
-                    Вход
-                </h2>
-                <input class="log-in-input" type="email" id="log-in-email" placeholder="Адрес электронной почты">
-                <input class="log-in-input" type="password" id="log-in-password" placeholder="Пароль">
-            </div>
-            <button id="log-in-btn" class="log-in-btn">Войти</button>
+        <div class="reg-window flex">
+            <h2 class="reg-title">
+                Зарегистрироваться как ученик
+            </h2>
+            <input placeholder="Адрес электронной почты" type="email" id="reg-main">
+            <button id="reg-next">Продолжить</button>
         </div>
     </main>
 </body>
