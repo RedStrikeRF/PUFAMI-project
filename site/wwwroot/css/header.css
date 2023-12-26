@@ -1,0 +1,96 @@
+@font-face { 
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face { 
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: rgba(35, 35, 35, 1);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.header {
+  min-height: 172px;
+  width: 100vw;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header-logo {
+  margin-left: 121px;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.header-logo-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.header-title {
+  font-family: "Gotham Pro";
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+
+.header-descr {
+  font-family: "Gotham Pro";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+  margin-left: 2px;
+}
+
+.header-log-in {
+  margin-left: 20px;
+  margin-right: 121px;
+
+  font-family: "Gotham Pro";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  
+}
+
+.profile-link {
+  margin-left: auto;
+  margin-right: 52px;
+}
