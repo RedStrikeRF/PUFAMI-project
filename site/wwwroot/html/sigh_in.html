@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/registration_css/welcome_page.css">
   <link rel="stylesheet" href="../css/registration_css/sigh_in.css">
+  <script defer src="../script/sign_in.js"></script>
 </head>
 <body>
   <header class="header">
@@ -21,10 +22,10 @@
 
   <main class="main">
     <div class="main-container">
-      <form method="post" class="form-sign-in">
+      <form action="/login" method="post" class="form-sign-in">
         <h3 class="form-sign-in-title">Вход</h3>
-        <input class="mail-input" type="email" placeholder="Адрес электронной почты"  required title="Пожалуйста, заполните это поле">
-        <input class="password-input" type="password" placeholder="Пароль"  required title="Пожалуйста, заполните это поле">
+        <input class="mail-input" type="email" placeholder="Адрес электронной почты" name="mail" required title="Пожалуйста, заполните это поле">
+        <input class="password-input" type="password" placeholder="Пароль" name="password" required title="Пожалуйста, заполните это поле">
         <button type="submit" class="sign-in-button">Войти</button>
       </form>
     </div>
