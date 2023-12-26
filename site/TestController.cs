@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 
+namespace PUFAMI_Project;
+
 [ApiController]
 [BasicAuthorization]
 public class TestController : Controller

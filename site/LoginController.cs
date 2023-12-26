@@ -1,25 +1,16 @@
-п»їusing Microsoft.AspNetCore.Authentication;
-using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using System.Text;
-using System.Text.Encodings.Web;
 using System.Text.RegularExpressions;
 
 namespace PUFAMI_Project;
 
-internal class BasicAuthenticationHandler : AuthenticationHandler<AuthenticationSchemeOptions>
+[Controller]
+public class LoginController : Controller
 {
-    public BasicAuthenticationHandler(
-        IOptionsMonitor<AuthenticationSchemeOptions> options,
-        ILoggerFactory logger,
-        UrlEncoder encoder,
-        ISystemClock clock
-    )
-        : base(options, logger, encoder, clock)
-    {
-    }
-
-    protected override Task<AuthenticateResult> HandleAuthenticateAsync()
+    [HttpGet("/login")]
+    public Task<AuthenticateResult> HandleAuthenticateAsync()
     {
         Response.Headers.Append("WWW-Authenticate", "Basic");
 
@@ -43,13 +34,13 @@ internal class BasicAuthenticationHandler : AuthenticationHandler<Authentication
 
         if (authUsername == null || authPassword == null)
         {
-            // РЎРґРµР»Р°С‚СЊ РїСЂРѕРІРµСЂРєСѓ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ С‡РµСЂРµР· Р±Рґ
+            // Сделать проверку пользователя через бд
             return Task.FromResult(AuthenticateResult.Fail("The username or password is not correct"));
         }
 
-        const string Issuer = "https://asd"; // РР·РґР°С‚РµР»СЊ С‚РѕРєРµРЅР° - РІР°С€ СЃР°Р№С‚
+        const string Issuer = "https://asd"; // Издатель токена - ваш сайт
 
-        var claims = new List<Claim>() // РЈСЃР»РѕРІРЅРѕ Р°С‚СЂРёР±СѓС‚С‹ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+        var claims = new List<Claim>() // Условно атрибуты пользователя
         {
             new Claim(ClaimTypes.Country, "Russia"),
         };
@@ -58,9 +49,7 @@ internal class BasicAuthenticationHandler : AuthenticationHandler<Authentication
         var claimsIdetity = new ClaimsIdentity(authenticatedUser, claims);
         var claimsPrincipal = new ClaimsPrincipal(claimsIdetity);
 
-        var q = Scheme.Name;
-
         return Task.FromResult(AuthenticateResult.Success(
-            new AuthenticationTicket(claimsPrincipal, Scheme.Name)));
+            new AuthenticationTicket(claimsPrincipal, "BasicAuthentication")));
     }
 }
