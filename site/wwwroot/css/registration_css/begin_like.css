@@ -1,0 +1,74 @@
+.main-container {
+  min-height: 908px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.form-begin-like {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  border-radius: 55px;
+  width: 688px;
+  height: 454px;
+
+  background-color: #fff;
+}
+
+.begin-like-title {
+  font-family: "Gotham Pro";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+
+  margin-top: 73px;
+}
+
+input {
+  border: 1px solid rgba(145, 73, 202, 1);
+  border-radius: 20px;
+
+  width: 574px;
+  height: 64px;
+  padding: 14px 20px 14px 20px;
+  margin-top: 34px;
+  margin-bottom: 111px;
+}
+
+input::placeholder {
+  color: rgba(17, 16, 16, 1);
+  font-family: "Gotham Pro";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+
+button {
+  background-color: rgba(145, 73, 202, 1);
+  border-radius: 20px;
+
+  font-family: Gotham Pro;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+
+  width: 187px;
+  height: 64px;
+}
+
+.w901 {
+  width: 901px;
+}
