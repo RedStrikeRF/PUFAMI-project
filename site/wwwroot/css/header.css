@@ -90,6 +90,16 @@ button {
   
 }
 
+.sorryforthis {
+  font-family: Gotham Pro;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
 .profile-link {
   margin-left: auto;
   margin-right: 52px;

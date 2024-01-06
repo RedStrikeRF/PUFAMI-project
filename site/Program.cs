@@ -2,12 +2,16 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
+using PUFAMI_Project.BLL.Models;
+using PUFAMI_Project.BLL.Services;
 using PUFAMI_Project.Data;
 
 namespace PUFAMI_Project
 {
     public class Program
     {
+        public static StudentService studentService = new StudentService();
+
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
@@ -51,7 +55,7 @@ namespace PUFAMI_Project
 
             DefaultFilesOptions options = new();
             options.DefaultFileNames.Clear();
-            options.DefaultFileNames.Add("/html/welcome_page.html");
+            options.DefaultFileNames.Add("/welcome_page.html");
             app.UseDefaultFiles(options);
             app.UseStaticFiles();
 
@@ -59,7 +63,39 @@ namespace PUFAMI_Project
             app.UseAuthorization();
             app.MapControllers();
 
-            app.Run(async (context) => await context.Response.WriteAsync("Hello World"));
+            var studentRegistrationData = new StudentRegistrationData();
+
+            app.Run(async (context) =>
+            {
+                context.Response.ContentType = "text/html; charset=utf-8";
+
+                // если обращение идет по адресу "/postuser", получаем данные формы
+                if (context.Request.Path == "/registration_list/postuser")
+                {
+                    var form = context.Request.Form;
+                    studentRegistrationData.Email = form["email"];
+                    studentRegistrationData.FirstName = form["firstname"];
+                    studentRegistrationData.LastName = form["lastname"];
+                    studentRegistrationData.Password = form["password"];
+
+                    try
+                    {
+                        studentService.Register(studentRegistrationData);
+                    }
+                    catch (ArgumentNullException)
+                    {
+                        throw new ArgumentNullException(nameof(studentRegistrationData));
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception(ex.Message);
+                    }
+                }
+                else
+                {
+                    await context.Response.SendFileAsync(@"C:\Users\Yurii\source\repos\PUFAMI_Project\site\wwwroot\registration_list\register_like_student.html");
+                }
+            });
 
             app.Run();
         }
