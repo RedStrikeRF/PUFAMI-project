@@ -21,10 +21,10 @@
 
   <main class="main">
     <div class="main-container">
-      <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form-sign-in">
+      <form method="post" action="getuser" class="form-sign-in">
         <h3 class="form-sign-in-title">Вход</h3>
-        <input class="mail-input" type="email" placeholder="Адрес электронной почты"  required title="Пожалуйста, заполните это поле">
-        <input class="password-input" type="password" placeholder="Пароль"  required title="Пожалуйста, заполните это поле">
+        <input class="mail-input" type="email" name="email" placeholder="Адрес электронной почты"  required title="Пожалуйста, заполните это поле">
+        <input class="password-input" type="password" name="password" placeholder="Пароль"  required title="Пожалуйста, заполните это поле">
         <button class="sign-in-button">Войти</button>
       </form>
     </div>

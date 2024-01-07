@@ -34,7 +34,7 @@ namespace PUFAMI_Project.Data.Repositories
         }
         private IDbConnection CreateConnection()
         {
-            return new SqliteConnection(@"Data Source = C:\Users\Yurii\source\repos\PUFAMI_Project\site\Data\DB\pufami_db.db");
+            return new SqliteConnection(@"Data Source = ./Data/DB/pufami_db.db");
         }
     }
 }

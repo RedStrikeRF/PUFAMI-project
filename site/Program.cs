@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
+using PUFAMI_Project.BLL.Exceptions;
 using PUFAMI_Project.BLL.Models;
 using PUFAMI_Project.BLL.Services;
 using PUFAMI_Project.Data;
@@ -64,6 +65,7 @@ namespace PUFAMI_Project
             app.MapControllers();
 
             var studentRegistrationData = new StudentRegistrationData();
+            var studentAuthenticationData = new StudentAuthenticationData();
 
             app.Run(async (context) =>
             {
@@ -81,6 +83,7 @@ namespace PUFAMI_Project
                     try
                     {
                         studentService.Register(studentRegistrationData);
+                        await context.Response.SendFileAsync(@"./wwwroot/work_space/profile.html");
                     }
                     catch (ArgumentNullException)
                     {
@@ -91,9 +94,29 @@ namespace PUFAMI_Project
                         throw new Exception(ex.Message);
                     }
                 }
+                if (context.Request.Path == "/getuser")
+                {
+                    var form = context.Request.Form;
+                    studentAuthenticationData.Email = form["email"];
+                    studentAuthenticationData.Password = form["password"];
+
+                    try
+                    {
+                        Student student = studentService.Authenticate(studentAuthenticationData);
+                        await context.Response.SendFileAsync(@"./wwwroot/work_space/profile.html");
+                    }
+                    catch (WrongPasswordException)
+                    {
+                        throw new WrongPasswordException();
+                    }
+                    catch (UserNotFoundException)
+                    {
+                        throw new UserNotFoundException();
+                    }
+                }
                 else
                 {
-                    await context.Response.SendFileAsync(@"C:\Users\Yurii\source\repos\PUFAMI_Project\site\wwwroot\registration_list\register_like_student.html");
+                    await context.Response.SendFileAsync(@"./wwwroot/registration_list/register_like_student.html");
                 }
             });
 
