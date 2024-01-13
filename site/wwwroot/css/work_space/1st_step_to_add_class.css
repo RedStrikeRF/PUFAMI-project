@@ -1,0 +1,93 @@
+.main {
+  background: linear-gradient(180deg, rgba(123, 36, 191, 0.85) 0%, rgba(255, 255, 255, 0) 100.31%);
+
+  min-height: 842px;
+}
+
+.main-container {
+  margin-left: 57px;
+  margin-right: 57px;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.form {
+  min-width: 621px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 51px;
+
+  padding: 66px 51px;
+
+  border-radius: 55px;
+
+  margin-top: 111px;
+}
+
+.title {
+  font-family: "Gotham Pro";
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+  
+
+}
+
+.form-input {
+  width: 100%;
+  height: 64px;
+  padding: 14px 20px;
+  border: 1px solid rgba(145, 73, 202, 1);
+
+  border-radius: 20px;
+
+  font-family: "Gotham Pro";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 20px;
+  border: 2px solid rgba(145, 73, 202, 1);
+  border-radius: 20px;
+  width: 240px;
+  height: 64px;
+  font-family: "Gotham Pro";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  background-color: white;
+
+}
+
+.purple {
+  background-color: rgba(145, 73, 202, 1);
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 38px;
+  flex-wrap: wrap;
+}
