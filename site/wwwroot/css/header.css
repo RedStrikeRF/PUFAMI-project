@@ -2,14 +2,14 @@
   font-family: "Gotham Pro";
   src: url("../fonts/GothamProBold.ttf") format("truetype");
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 @font-face { 
   font-family: "Gotham Pro";
   src: url("../fonts/GothamProRegular.ttf") format("truetype");
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 * {
@@ -90,7 +90,33 @@ button {
   
 }
 
+.sorryforthis {
+  font-family: Gotham Pro;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
 .profile-link {
   margin-left: auto;
   margin-right: 52px;
+}
+
+.back-to-class {
+  background-image: url(../image/arrow-left.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+
+  padding-left: 65px;
+
+  font-family: "Gotham Pro";
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-left: 45px;
 }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programming\\Projects\\PUFAMI-project\\site\\PUFAMI_Project.csproj": {}
+    "C:\\Users\\Yurii\\source\\repos\\PUFAMI_Project\\site\\PUFAMI_Project.csproj": {}
   },
   "projects": {
-    "D:\\Programming\\Projects\\PUFAMI-project\\site\\PUFAMI_Project.csproj": {
+    "C:\\Users\\Yurii\\source\\repos\\PUFAMI_Project\\site\\PUFAMI_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programming\\Projects\\PUFAMI-project\\site\\PUFAMI_Project.csproj",
+        "projectUniqueName": "C:\\Users\\Yurii\\source\\repos\\PUFAMI_Project\\site\\PUFAMI_Project.csproj",
         "projectName": "PUFAMI_Project",
-        "projectPath": "D:\\Programming\\Projects\\PUFAMI-project\\site\\PUFAMI_Project.csproj",
-        "packagesPath": "C:\\Users\\sgkto\\.nuget\\packages\\",
-        "outputPath": "D:\\Programming\\Projects\\PUFAMI-project\\site\\obj\\",
+        "projectPath": "C:\\Users\\Yurii\\source\\repos\\PUFAMI_Project\\site\\PUFAMI_Project.csproj",
+        "packagesPath": "C:\\Users\\Yurii\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yurii\\source\\repos\\PUFAMI_Project\\site\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sgkto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yurii\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +45,15 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.28, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Data.Sqlite": {
               "target": "Package",
               "version": "[8.0.0, )"
             },
@@ -61,6 +70,10 @@
             "MySql.Data": {
               "target": "Package",
               "version": "[8.2.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
