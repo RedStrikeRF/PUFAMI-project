@@ -2,43 +2,49 @@
   "example1@example.com": {
     "avatar": 0,
     "password": "examplePassword1",
-    "surname": "Иван",
-    "name": "Иванов",
-    "status": "учитель"
+    "name": "Иван",
+    "surname": "Иванов",
+    "role": "учитель",
+    "email": "example1@example.com"
+  },
+  "example2@example.com": {
+    "avatar": 4,
+    "password": "123123123",
+    "name": "Петр",
+    "surname": "Петров",
+    "role": "учитель",
+    "email": "example2@example.com"
   },
   "shubin152@gmail.com": {
     "avatar": 0,
     "password": "123123123",
-    "surname": "Петр",
-    "name": "Петров",
-    "status": "учитель"
-  },
-  "example3@example.com": {
-    "avatar": 0,
-    "password": "examplePassword3",
-    "surname": "Шубин",
     "name": "Илья",
-    "status": "ученик"
+    "surname": "Шубин",
+    "role": "ученик",
+    "email": "shubin152@gmail.com"
   },
   "example4@example.com": {
     "avatar": 0,
     "password": "examplePassword4",
+    "name": "Федя",
     "surname": "Горюнов",
-    "name": "Петров",
-    "status": "ученик"
+    "role": "ученик",
+    "email": "example4@example.com"
   },
   "example5@example.com": {
     "avatar": 0,
     "password": "examplePassword5",
-    "surname": "Иван",
-    "name": "Иванов",
-    "status": "учитель"
+    "name": "Иван",
+    "surname": "Иванов",
+    "role": "учитель",
+    "email": "example5@example.com"
   },
   "example6@example.com": {
     "avatar": 0,
     "password": "examplePassword6",
-    "surname": "Петр",
-    "name": "Петров",
-    "status": "учитель"
+    "name": "Петр",
+    "surname": "Петров",
+    "role": "учитель",
+    "email": "example6@example.com"
   }
 }

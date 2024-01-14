@@ -1,0 +1,68 @@
+{
+  "0": {
+    "name": "опездолы",
+    "graduate": "6-Б",
+    "owner": "shubin152@gmail.com",
+    "structure" : {
+      "example3@example.com": {
+        "book": 4,
+        "main": 5,
+        "brain": 3
+      },
+      "example1@example.com": {
+        "book": 2,
+        "storm": 3,
+        "lethality": 3
+      }
+    }
+  },
+  "1": {
+    "name": "опездолы",
+    "graduate": "9-ГЖ",
+    "owner": "shubin152@gmail.com",
+    "structure" : {
+      "example3@example.com": {
+        "book": 4,
+        "main": 5,
+        "brain": 3
+      },
+      "example1@example.com": {
+        "book": 2,
+        "storm": 3,
+        "lethality": 3
+      }
+    }
+  },"2": {
+    "name": "короли",
+    "graduate": "4-В",
+    "owner": "example2@example.com",
+    "structure" : {
+      "example3@example.com": {
+        "book": 4,
+        "main": 5,
+        "brain": 3
+      },
+      "example1@example.com": {
+        "book": 2,
+        "storm": 3,
+        "lethality": 3
+      }
+    }
+  },"3": {
+    "name": "умнички",
+    "graduate": "1-Г",
+    "owner": "example4@example.com",
+    "structure" : {
+      "example5@example.com": {
+        "book": 4,
+        "main": 5,
+        "brain": 3
+      },
+      "example6@example.com": {
+        "book": 2,
+        "storm": 3,
+        "lethality": 3
+      }
+    }
+  }
+}

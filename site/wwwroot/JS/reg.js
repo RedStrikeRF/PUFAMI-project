@@ -43,14 +43,14 @@ document.addEventListener('DOMContentLoaded', function() {
           body: JSON.stringify(data)
         })
         .then(result => {
-          console.log('Пользователь успешно добавлен в users.json', result);
+          alert('Пользователь успешно добавлен в users.json', result);
           // Можно выполнить дополнительные действия после успешной записи, например, перенаправить пользователя на другую страницу
         })
         .catch(error => {
-          console.error('Произошла ошибка при добавлении пользователя в users.json', error);
+          alert('Произошла ошибка при добавлении пользователя в users.json', error);
         });
       })
-      .then(window.location.href = '../work_space/classes.html')
+      // .then(window.location.href = '../work_space/classes.html')
       .catch(error => {
         console.error('Произошла ошибка при загрузке users.json', error);
       });
