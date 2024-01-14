@@ -81,6 +81,14 @@
       "PackagePath": "staticwebassets\\css\\work_space\\1st_step_to_add_class.css"
     },
     {
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\add_link.css",
+      "PackagePath": "staticwebassets\\css\\work_space\\add_link.css"
+    },
+    {
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\add_revie.css",
+      "PackagePath": "staticwebassets\\css\\work_space\\add_revie.css"
+    },
+    {
       "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\add_student.css",
       "PackagePath": "staticwebassets\\css\\work_space\\add_student.css"
     },
@@ -215,6 +223,10 @@
     {
       "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\work_space\\1st_step_to_add_class.html",
       "PackagePath": "staticwebassets\\work_space\\1st_step_to_add_class.html"
+    },
+    {
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\work_space\\add_revie.html",
+      "PackagePath": "staticwebassets\\work_space\\add_revie.html"
     },
     {
       "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\work_space\\add_student.html",

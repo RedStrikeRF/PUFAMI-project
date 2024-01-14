@@ -2,27 +2,17 @@
 {
     public class Class
     {
-        public Dictionary<int, School> Schools { get; set; }
+        public string name { get; set; }
+        public string graduate { get; set; }
+        public string owner { get; set; }
+        public Dictionary<string, List<Subject>> structure { get; set; }
 
-        public Class(Dictionary<int, School> schools)
+        public Class(string name, string graduate, string owner, Dictionary<string, List<Subject>> structure)
         {
-            Schools = schools;
-        }
-    }
-
-    public class School
-    {
-        public string Name { get; set; }
-        public string Graduate { get; set; }
-        public string Owner { get; set; }
-        public Dictionary<string, Subject> Structure { get; set; }
-
-        public School(string name, string graduate, string owner, Dictionary<string, Subject> structure)
-        {
-            Name = name;
-            Graduate = graduate;
-            Owner = owner;
-            Structure = structure;
+            this.name = name;
+            this.graduate = graduate;
+            this.owner = owner;
+            this.structure = structure;
         }
     }
 

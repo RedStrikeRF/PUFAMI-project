@@ -8,6 +8,7 @@ using PUFAMI_Project.BLL.Exceptions;
 using PUFAMI_Project.BLL.Models;
 using PUFAMI_Project.BLL.Services;
 using PUFAMI_Project.Data;
+using System.ComponentModel;
 
 namespace PUFAMI_Project
 {
@@ -184,23 +185,55 @@ namespace PUFAMI_Project
                     var name = (string)data.name;
                     var graduate = (string)data.graduate;
                     var owner = (string)data.owner;
-                    var structure = (List<Dictionary<string, int>>)data.structure;
+                    var structure = data.structure;
+                    var subjectDict = new Dictionary<string, List<Subject>>();
+                    var subjectList = new List<Subject>();
+                    foreach (PropertyDescriptor propertyDescriptor in TypeDescriptor.GetProperties(structure))
+                    {
+                        object obj = propertyDescriptor.GetValue(structure);
+                        subjectList.Add(obj as Subject);
+                        subjectDict.Add(propertyDescriptor.Name, subjectList);
+                    }
 
                     try
                     {
                         string fileContent = File.ReadAllText(jsonClasses);
-                        Class classes = JsonConvert.DeserializeObject<Class>(fileContent);
+                        Dictionary<string, Class> classes = JsonConvert.DeserializeObject<Dictionary<string, Class>>(fileContent);
 
-                        //if (users.ContainsKey(email))
-                        //{
-                        //    users.Remove(email);
-                        //    User user = new User(avatar, password, surname, name, role, email);
-                        //    users.Add(email, user);
+                        Class newClass = new Class(name, graduate, owner, structure);
 
-                        //    string updatedJson = JsonConvert.SerializeObject(users, Formatting.Indented);
+                        context.Response.ContentType = "application/json";
+                        var responseData = new
+                        {
+                            status = ""
+                        };
 
-                        //    File.WriteAllText(jsonUsers, updatedJson);
-                        //}
+                        if (!classes.ContainsKey(id))
+                        {
+                            responseData = new
+                            {
+                                status = "success"
+                            };
+                        }
+                        else
+                        {
+                            responseData = new
+                            {
+                                status = "failure"
+                            };
+                        }
+
+                        string jsonResponse = JsonConvert.SerializeObject(responseData);
+
+                        // Отправляем JSON в качестве ответа
+                        context.Response.WriteAsync(jsonResponse);
+
+                        classes.Add(id, newClass);
+
+                        string updatedJson = JsonConvert.SerializeObject(classes, Formatting.Indented);
+
+                        File.WriteAllText(jsonUsers, updatedJson);
+
                         GetEmail(name);
                     }
                     catch (WrongPasswordException)
