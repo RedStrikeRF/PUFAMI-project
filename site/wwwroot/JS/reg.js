@@ -12,13 +12,11 @@ document.querySelector('.form-begin-like').addEventListener('submit', function (
     
     let role = 'ученик'
     if (title.includes('учителя')) {
-        const role = "учитель";
+        role = "учитель";
     } else if (title.includes('руководителя школы')) {
-        const role = "директор";
+        role = "директор";
     } else if (title.includes('родителя')) {
-        const role = "родитель";
-    } else {
-        const role = "ученик"
+        role = "родитель";
     }
     // Создаем объект пользователя
     const user = {
@@ -40,11 +38,13 @@ document.querySelector('.form-begin-like').addEventListener('submit', function (
 
     // Отправка запроса
     fetch('postuser', requestOptions)
-        .then(response => response.json())
-        .then(data => {
-            // Обработка полученных данных
-            alert(data);
-        })
+        .then(response => {
+            if (!response.ok){
+                throw new Error('Network response was not ok');
+            }
+            localStorage.setItem('PUFAMIUser', JSON.stringify(user));
+            window.location.href = "../work_space/classes.html"
+            return response.json()})
         .catch(error => {
             // Обработка ошибок
             console.error('There has been a problem with your fetch operation:', error);
