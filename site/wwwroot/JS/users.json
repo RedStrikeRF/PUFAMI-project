@@ -2,15 +2,43 @@
   "example1@example.com": {
     "avatar": 0,
     "password": "examplePassword1",
-    "firstname": "Иван",
-    "lastname": "Иванов",
+    "surname": "Иван",
+    "name": "Иванов",
     "status": "учитель"
   },
   "example2@example.com": {
     "avatar": 0,
     "password": "examplePassword2",
-    "firstname": "Петр",
-    "lastname": "Петров",
+    "surname": "Петр",
+    "name": "Петров",
+    "status": "учитель"
+  },
+  "example3@example.com": {
+    "avatar": 0,
+    "password": "examplePassword3",
+    "surname": "Шубин",
+    "name": "Илья",
+    "status": "ученик"
+  },
+  "example4@example.com": {
+    "avatar": 0,
+    "password": "examplePassword4",
+    "surname": "Горюнов",
+    "name": "Петров",
+    "status": "ученик"
+  },
+  "example5@example.com": {
+    "avatar": 0,
+    "password": "examplePassword5",
+    "surname": "Иван",
+    "name": "Иванов",
+    "status": "учитель"
+  },
+  "example6@example.com": {
+    "avatar": 0,
+    "password": "examplePassword6",
+    "surname": "Петр",
+    "name": "Петров",
     "status": "учитель"
   }
 }

@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const user = {
       "avatar": 0,
       "password": password,
-      "firstname": firstname,
-      "lastname": lastname,
+      "surname": firstname,
+      "name": lastname,
       "status": status
     };
 
@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
           console.error('Произошла ошибка при добавлении пользователя в users.json', error);
         });
       })
+      .then(window.location.href = '')
       .catch(error => {
         console.error('Произошла ошибка при загрузке users.json', error);
       });
