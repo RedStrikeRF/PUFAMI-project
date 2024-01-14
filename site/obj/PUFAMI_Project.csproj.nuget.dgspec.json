@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yurii\\source\\repos\\PUFAMI_Project\\site\\PUFAMI_Project.csproj": {}
+    "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\PUFAMI_Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yurii\\source\\repos\\PUFAMI_Project\\site\\PUFAMI_Project.csproj": {
+    "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\PUFAMI_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yurii\\source\\repos\\PUFAMI_Project\\site\\PUFAMI_Project.csproj",
+        "projectUniqueName": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\PUFAMI_Project.csproj",
         "projectName": "PUFAMI_Project",
-        "projectPath": "C:\\Users\\Yurii\\source\\repos\\PUFAMI_Project\\site\\PUFAMI_Project.csproj",
+        "projectPath": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\PUFAMI_Project.csproj",
         "packagesPath": "C:\\Users\\Yurii\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yurii\\source\\repos\\PUFAMI_Project\\site\\obj\\",
+        "outputPath": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

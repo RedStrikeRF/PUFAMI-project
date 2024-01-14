@@ -2,10 +2,12 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json.Linq;
 using PUFAMI_Project.BLL.Exceptions;
 using PUFAMI_Project.BLL.Models;
 using PUFAMI_Project.BLL.Services;
 using PUFAMI_Project.Data;
+using System.Text.Json;
 
 namespace PUFAMI_Project
 {
@@ -56,7 +58,7 @@ namespace PUFAMI_Project
 
             DefaultFilesOptions options = new();
             options.DefaultFileNames.Clear();
-            options.DefaultFileNames.Add("/welcome_page.html");
+            options.DefaultFileNames.Add("./welcome_page.html");
             app.UseDefaultFiles(options);
             app.UseStaticFiles();
 
@@ -72,18 +74,25 @@ namespace PUFAMI_Project
                 context.Response.ContentType = "text/html; charset=utf-8";
 
                 // если обращение идет по адресу "/postuser", получаем данные формы
-                if (context.Request.Path == "/registration_list/postuser")
+                if (context.Request.Path == "/postuser")
                 {
-                    var form = context.Request.Form;
-                    studentRegistrationData.Email = form["email"];
-                    studentRegistrationData.FirstName = form["firstname"];
-                    studentRegistrationData.LastName = form["lastname"];
-                    studentRegistrationData.Password = form["password"];
+                    var request = context.Request;
+                    string body = await new System.IO.StreamReader(request.Body).ReadToEndAsync();
+                    dynamic data = JObject.Parse(body);
+                    var avatar = data.avatar;
+                    var password = data.password;
+                    var surname = data.surname;
+                    var name = data.name;
+                    var role = data.role;
+                    var email = data.email;
 
                     try
                     {
-                        studentService.Register(studentRegistrationData);
-                        await context.Response.SendFileAsync(@"./wwwroot/work_space/profile.html");
+                        User user = new User(avatar, password, surname, name, role, email);
+                        var options = new JsonSerializerOptions { WriteIndented = true };
+                        string json = JsonSerializer.Serialize(user, options);
+
+                        File.WriteAllText(@"./wwwroot/JS/users.json", json);
                     }
                     catch (ArgumentNullException)
                     {
@@ -113,10 +122,6 @@ namespace PUFAMI_Project
                     {
                         throw new UserNotFoundException();
                     }
-                }
-                else
-                {
-                    await context.Response.SendFileAsync(@"./wwwroot/registration_list/register_like_student.html");
                 }
             });
 
