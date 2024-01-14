@@ -4,7 +4,7 @@ document.querySelector('.form').addEventListener('submit', function(event) {
   // Получаем значения из полей формы
   const className = document.querySelector('input[name="class_name"]').value;
   const classData = document.querySelector('input[name="class"]').value;
-  const user = localStorage.getItem("PUFAMIUser");
+  const user = Object.keys(JSON.parse(localStorage.getItem("PUFAMIUser")))[0];
   let userClasses = localStorage.getItem("PUFAMIUserClass");
   let newClass = {};
   let Class = {};
@@ -50,7 +50,7 @@ document.querySelector('.form').addEventListener('submit', function(event) {
         userClasses.id = {
           "name":newClass.name,
           "graduate":newClass.graduate,
-          "owner":newClass.owner,
+          "owner": newClass.owner,
           "structure":newClass.structure,
         };
         localStorage.setItem('PUFAMICurrentClassId', JSON.stringify(id));
