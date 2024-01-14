@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KfyerEIh6SO2H2P6f8U01OveBAOFhM5j6VHpdf3ri4l91Pc33/jq3OSf9trcp7NNe16TmN/Q6mqZvE1gtsQMHw==",
+  "dgSpecHash": "NrrsSCn5tpdKO/xapS7Jx2YPKwaqehFprbqKItcliY7hrojL8cZOrORMjE6vXPKS/0/y5bp9iQBQa3N8W+NWMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\PUFAMI_Project.csproj",
+  "projectFilePath": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\PUFAMI_Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yurii\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\Yurii\\.nuget\\packages\\dapper\\2.1.28\\dapper.2.1.28.nupkg.sha512",

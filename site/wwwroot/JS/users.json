@@ -54,5 +54,13 @@
     "name": "test",
     "role": "ученик",
     "email": "test@test.ru"
+  },
+  "xcfghjk@hgfdfghj": {
+    "avatar": 0,
+    "password": "hjfhdfjdf",
+    "surname": "jhgdhjk",
+    "name": "hjgfhjk",
+    "role": "ученик",
+    "email": "xcfghjk@hgfdfghj"
   }
 }

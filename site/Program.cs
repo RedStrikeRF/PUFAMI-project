@@ -94,6 +94,36 @@ namespace PUFAMI_Project
                         Dictionary<string, User> users = JsonConvert.DeserializeObject<Dictionary<string, User>>(fileContent);
                         User user = new User(avatar, password, surname, name, role, email);
 
+                        context.Response.ContentType = "application/json";
+                        var responseData = new
+                        {
+                            status = ""
+                        };
+
+                        foreach (var userEmail in users.Keys)
+                        {
+                            if (userEmail != email)
+                            {
+                                responseData = new
+                                {
+                                    status = "success"
+                                };
+                            }
+                            else
+                            {
+                                responseData = new
+                                {
+                                    status = "failure"
+                                };
+                                break;
+                            }
+                        }
+
+                        string jsonResponse = JsonConvert.SerializeObject(responseData);
+
+                        // Отправляем JSON в качестве ответа
+                        context.Response.WriteAsync(jsonResponse);
+
                         users.Add(email, user);
 
                         string updatedJson = JsonConvert.SerializeObject(users, Formatting.Indented);

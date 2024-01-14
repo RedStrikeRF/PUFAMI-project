@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9zAZ0ZatzMwAwaYmQItLBaamSRHHcSYH6d+40+n1D+g=",
+  "Hash": "WDZTsAviC9PQBjr5Mj0cqiWN2qA5ZPeH2/JTqH8Txkc=",
   "Source": "PUFAMI_Project",
   "BasePath": "_content/PUFAMI_Project",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "PUFAMI_Project\\wwwroot",
       "Source": "PUFAMI_Project",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\404.html",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\404.html",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "404.html",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\404.html"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\bottom-gradient.css",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\bottom-gradient.css",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "css/bottom-gradient.css",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bottom-gradient.css"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\footer.css",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\footer.css",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "css/footer.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\footer.css"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\header.css",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\header.css",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "css/header.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\header.css"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\normalize.css",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\normalize.css",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "css/normalize.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\normalize.css"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\profile.css",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\profile.css",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "css/profile.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\profile.css"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\registration_css\\begin_like.css",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\registration_css\\begin_like.css",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "css/registration_css/begin_like.css",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\registration_css\\begin_like.css"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\registration_css\\register_as.css",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\registration_css\\register_as.css",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "css/registration_css/register_as.css",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\css\\registration_css\\register_as.css"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\registration_css\\sigh_in.css",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\registration_css\\sigh_in.css",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "css/registration_css/sigh_in.css",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\css\\registration_css\\sigh_in.css"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\registration_css\\welcome_page.css",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\registration_css\\welcome_page.css",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "css/registration_css/welcome_page.css",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\css\\registration_css\\welcome_page.css"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\sign_in.css",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\sign_in.css",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "css/sign_in.css",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\css\\sign_in.css"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\start_page.css",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\start_page.css",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "css/start_page.css",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\css\\start_page.css"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\1st_step_to_add_class.css",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\1st_step_to_add_class.css",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "css/work_space/1st_step_to_add_class.css",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\css\\work_space\\1st_step_to_add_class.css"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\add_student.css",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\add_student.css",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "css/work_space/add_student.css",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\css\\work_space\\add_student.css"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\classes.css",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\classes.css",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "css/work_space/classes.css",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\css\\work_space\\classes.css"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\profile.css",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\profile.css",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "css/work_space/profile.css",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\css\\work_space\\profile.css"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\fonts\\GothamProBold.ttf",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\fonts\\GothamProBold.ttf",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "fonts/GothamProBold.ttf",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\GothamProBold.ttf"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\fonts\\GothamProRegular.ttf",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\fonts\\GothamProRegular.ttf",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "fonts/GothamProRegular.ttf",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\GothamProRegular.ttf"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\add-circle.svg",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\add-circle.svg",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/add-circle.svg",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\image\\add-circle.svg"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\arrow-left.svg",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\arrow-left.svg",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/arrow-left.svg",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\image\\arrow-left.svg"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\arrow-right.svg",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\arrow-right.svg",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/arrow-right.svg",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\image\\arrow-right.svg"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\0.png",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\0.png",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/avatars/0.png",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\image\\avatars\\0.png"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\1.png",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\1.png",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/avatars/1.png",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\image\\avatars\\1.png"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\10.png",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\10.png",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/avatars/10.png",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\image\\avatars\\10.png"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\11.png",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\11.png",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/avatars/11.png",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\image\\avatars\\11.png"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\2.png",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\2.png",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/avatars/2.png",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\image\\avatars\\2.png"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\3.png",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\3.png",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/avatars/3.png",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\image\\avatars\\3.png"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\4.png",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\4.png",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/avatars/4.png",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\image\\avatars\\4.png"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\5.png",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\5.png",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/avatars/5.png",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\image\\avatars\\5.png"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\6.png",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\6.png",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/avatars/6.png",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\image\\avatars\\6.png"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\7.png",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\7.png",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/avatars/7.png",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\image\\avatars\\7.png"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\8.png",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\8.png",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/avatars/8.png",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\image\\avatars\\8.png"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\9.png",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\9.png",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/avatars/9.png",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\image\\avatars\\9.png"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\director.png",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\director.png",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/director.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\image\\director.png"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\logo.jpg",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\logo.jpg",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/logo.jpg",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\image\\logo.jpg"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\parent.png",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\parent.png",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/parent.png",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\image\\parent.png"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\student.png",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\student.png",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/student.png",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\image\\student.png"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\teacher.png",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\teacher.png",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/teacher.png",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\image\\teacher.png"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\user-square.png",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\user-square.png",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "image/user-square.png",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\image\\user-square.png"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\JS\\addclass.js",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\addclass.js",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "JS/addclass.js",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\JS\\addclass.js"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\JS\\classes.js",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\classes.js",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "JS/classes.js",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\JS\\classes.js"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\JS\\classes.json",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\classes.json",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "JS/classes.json",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\JS\\classes.json"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\JS\\profile.js",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\profile.js",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "JS/profile.js",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\JS\\profile.js"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\JS\\reg.js",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\reg.js",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "JS/reg.js",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\JS\\reg.js"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\JS\\sign-in.js",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\sign-in.js",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "JS/sign-in.js",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\JS\\sign-in.js"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\JS\\users.json",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\users.json",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "JS/users.json",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\JS\\users.json"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\registration_list\\register_like_director.html",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\registration_list\\register_like_director.html",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "registration_list/register_like_director.html",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\registration_list\\register_like_director.html"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\registration_list\\register_like_parent.html",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\registration_list\\register_like_parent.html",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "registration_list/register_like_parent.html",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\registration_list\\register_like_parent.html"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\registration_list\\register_like_student.html",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\registration_list\\register_like_student.html",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "registration_list/register_like_student.html",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\registration_list\\register_like_student.html"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\registration_list\\register_like_teacher.html",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\registration_list\\register_like_teacher.html",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "registration_list/register_like_teacher.html",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\registration_list\\register_like_teacher.html"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\sigh_in.html",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\sigh_in.html",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "sigh_in.html",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\sigh_in.html"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\welcome_page.html",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\welcome_page.html",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "welcome_page.html",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\welcome_page.html"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\work_space\\1st_step_to_add_class.html",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\work_space\\1st_step_to_add_class.html",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "work_space/1st_step_to_add_class.html",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\work_space\\1st_step_to_add_class.html"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\work_space\\add_student.html",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\work_space\\add_student.html",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "work_space/add_student.html",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\work_space\\add_student.html"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\work_space\\beginadd.html",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\work_space\\beginadd.html",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "work_space/beginadd.html",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\work_space\\beginadd.html"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\work_space\\classes.html",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\work_space\\classes.html",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "work_space/classes.html",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\work_space\\classes.html"
     },
     {
-      "Identity": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\work_space\\profile.html",
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\work_space\\profile.html",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
       "BasePath": "_content/PUFAMI_Project",
       "RelativePath": "work_space/profile.html",
       "AssetKind": "All",

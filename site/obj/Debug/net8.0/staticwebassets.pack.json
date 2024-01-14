@@ -1,231 +1,231 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\404.html",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\404.html",
       "PackagePath": "staticwebassets\\404.html"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\JS\\addclass.js",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\addclass.js",
       "PackagePath": "staticwebassets\\JS\\addclass.js"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\JS\\classes.js",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\classes.js",
       "PackagePath": "staticwebassets\\JS\\classes.js"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\JS\\classes.json",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\classes.json",
       "PackagePath": "staticwebassets\\JS\\classes.json"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\JS\\profile.js",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\profile.js",
       "PackagePath": "staticwebassets\\JS\\profile.js"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\JS\\reg.js",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\reg.js",
       "PackagePath": "staticwebassets\\JS\\reg.js"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\JS\\sign-in.js",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\sign-in.js",
       "PackagePath": "staticwebassets\\JS\\sign-in.js"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\JS\\users.json",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\users.json",
       "PackagePath": "staticwebassets\\JS\\users.json"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\bottom-gradient.css",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\bottom-gradient.css",
       "PackagePath": "staticwebassets\\css\\bottom-gradient.css"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\footer.css",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\footer.css",
       "PackagePath": "staticwebassets\\css\\footer.css"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\header.css",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\header.css",
       "PackagePath": "staticwebassets\\css\\header.css"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\normalize.css",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\normalize.css",
       "PackagePath": "staticwebassets\\css\\normalize.css"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\profile.css",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\profile.css",
       "PackagePath": "staticwebassets\\css\\profile.css"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\registration_css\\begin_like.css",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\registration_css\\begin_like.css",
       "PackagePath": "staticwebassets\\css\\registration_css\\begin_like.css"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\registration_css\\register_as.css",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\registration_css\\register_as.css",
       "PackagePath": "staticwebassets\\css\\registration_css\\register_as.css"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\registration_css\\sigh_in.css",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\registration_css\\sigh_in.css",
       "PackagePath": "staticwebassets\\css\\registration_css\\sigh_in.css"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\registration_css\\welcome_page.css",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\registration_css\\welcome_page.css",
       "PackagePath": "staticwebassets\\css\\registration_css\\welcome_page.css"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\sign_in.css",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\sign_in.css",
       "PackagePath": "staticwebassets\\css\\sign_in.css"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\start_page.css",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\start_page.css",
       "PackagePath": "staticwebassets\\css\\start_page.css"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\1st_step_to_add_class.css",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\1st_step_to_add_class.css",
       "PackagePath": "staticwebassets\\css\\work_space\\1st_step_to_add_class.css"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\add_student.css",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\add_student.css",
       "PackagePath": "staticwebassets\\css\\work_space\\add_student.css"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\classes.css",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\classes.css",
       "PackagePath": "staticwebassets\\css\\work_space\\classes.css"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\profile.css",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\profile.css",
       "PackagePath": "staticwebassets\\css\\work_space\\profile.css"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\fonts\\GothamProBold.ttf",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\fonts\\GothamProBold.ttf",
       "PackagePath": "staticwebassets\\fonts\\GothamProBold.ttf"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\fonts\\GothamProRegular.ttf",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\fonts\\GothamProRegular.ttf",
       "PackagePath": "staticwebassets\\fonts\\GothamProRegular.ttf"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\add-circle.svg",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\add-circle.svg",
       "PackagePath": "staticwebassets\\image\\add-circle.svg"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\arrow-left.svg",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\arrow-left.svg",
       "PackagePath": "staticwebassets\\image\\arrow-left.svg"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\arrow-right.svg",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\arrow-right.svg",
       "PackagePath": "staticwebassets\\image\\arrow-right.svg"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\0.png",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\0.png",
       "PackagePath": "staticwebassets\\image\\avatars\\0.png"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\1.png",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\1.png",
       "PackagePath": "staticwebassets\\image\\avatars\\1.png"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\10.png",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\10.png",
       "PackagePath": "staticwebassets\\image\\avatars\\10.png"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\11.png",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\11.png",
       "PackagePath": "staticwebassets\\image\\avatars\\11.png"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\2.png",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\2.png",
       "PackagePath": "staticwebassets\\image\\avatars\\2.png"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\3.png",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\3.png",
       "PackagePath": "staticwebassets\\image\\avatars\\3.png"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\4.png",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\4.png",
       "PackagePath": "staticwebassets\\image\\avatars\\4.png"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\5.png",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\5.png",
       "PackagePath": "staticwebassets\\image\\avatars\\5.png"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\6.png",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\6.png",
       "PackagePath": "staticwebassets\\image\\avatars\\6.png"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\7.png",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\7.png",
       "PackagePath": "staticwebassets\\image\\avatars\\7.png"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\8.png",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\8.png",
       "PackagePath": "staticwebassets\\image\\avatars\\8.png"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\9.png",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\9.png",
       "PackagePath": "staticwebassets\\image\\avatars\\9.png"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\director.png",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\director.png",
       "PackagePath": "staticwebassets\\image\\director.png"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\logo.jpg",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\logo.jpg",
       "PackagePath": "staticwebassets\\image\\logo.jpg"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\parent.png",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\parent.png",
       "PackagePath": "staticwebassets\\image\\parent.png"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\student.png",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\student.png",
       "PackagePath": "staticwebassets\\image\\student.png"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\teacher.png",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\teacher.png",
       "PackagePath": "staticwebassets\\image\\teacher.png"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\image\\user-square.png",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\user-square.png",
       "PackagePath": "staticwebassets\\image\\user-square.png"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\registration_list\\register_like_director.html",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\registration_list\\register_like_director.html",
       "PackagePath": "staticwebassets\\registration_list\\register_like_director.html"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\registration_list\\register_like_parent.html",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\registration_list\\register_like_parent.html",
       "PackagePath": "staticwebassets\\registration_list\\register_like_parent.html"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\registration_list\\register_like_student.html",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\registration_list\\register_like_student.html",
       "PackagePath": "staticwebassets\\registration_list\\register_like_student.html"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\registration_list\\register_like_teacher.html",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\registration_list\\register_like_teacher.html",
       "PackagePath": "staticwebassets\\registration_list\\register_like_teacher.html"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\sigh_in.html",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\sigh_in.html",
       "PackagePath": "staticwebassets\\sigh_in.html"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\welcome_page.html",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\welcome_page.html",
       "PackagePath": "staticwebassets\\welcome_page.html"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\work_space\\1st_step_to_add_class.html",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\work_space\\1st_step_to_add_class.html",
       "PackagePath": "staticwebassets\\work_space\\1st_step_to_add_class.html"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\work_space\\add_student.html",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\work_space\\add_student.html",
       "PackagePath": "staticwebassets\\work_space\\add_student.html"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\work_space\\beginadd.html",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\work_space\\beginadd.html",
       "PackagePath": "staticwebassets\\work_space\\beginadd.html"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\work_space\\classes.html",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\work_space\\classes.html",
       "PackagePath": "staticwebassets\\work_space\\classes.html"
     },
     {
-      "Id": "C:\\Users\\Yurii\\Source\\Repos\\PUFAMI-project\\site\\wwwroot\\work_space\\profile.html",
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\work_space\\profile.html",
       "PackagePath": "staticwebassets\\work_space\\profile.html"
     },
     {
