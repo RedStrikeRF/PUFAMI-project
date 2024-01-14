@@ -20,14 +20,14 @@ document.addEventListener("DOMContentLoaded", function() {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-      let newUser = {
-              name: inputName.value ? inputName.value : content.name,
-              surname: inputSurname.value ? inputSurname.value : content.surname,
-              avatar: new_avatar,
-              email: content.email,
-              password: content.password,
-              role: content.role
-      }
+    let newUser = {
+      name: inputName.value ? inputName.value : content.name,
+      surname: inputSurname.value ? inputSurname.value : content.surname,
+      avatar: new_avatar,
+      email: content.email,
+      password: content.password,
+      role: content.role,
+    }
     
     // Настройка запроса
     const requestOptions = {
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
       })
       .then(data => {
         // Обработка полученных данных
-        localStorage.setItem('PUFAMIUser', JSON.stringify({ [key]: newUser }));
+        localStorage.setItem('PUFAMIUser', JSON.stringify({[key]: newUser}));
       })
       .catch(error => {
         // Обработка ошибок
@@ -56,5 +56,49 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   })
 
+  avatar_choice.addEventListener('click', function() {
+    // Добавляем всплывающее окно (модальное окно)
+    showModal();
+  });
   
+  // Функция для отображения модального окна
+  function showModal() {
+    // Создаем модальное окно
+    const modal = document.createElement('div');
+    const container = document.createElement('div');
+
+    modal.className = 'modal';
+    container.classList.add('modal-container');
+    modal.append(container)
+  
+    // Создаем кнопки выбора аватарки
+    for (let i = 0; i <= 10; i++) {
+      const button = document.createElement('button');
+      button.className = 'avatar-select';
+      button.style.backgroundImage = `url('../image/avatars/${i}.png')`;
+      button.addEventListener('click', function() {
+        // Сохраняем выбранную цифру в переменной new_avatar
+        new_avatar = i;
+        avatar_choice.style.backgroundImage = `url('../image/avatars/${new_avatar}.png')`;
+        // Закрываем модальное окно
+        closeModal(modal);
+      });
+      container.appendChild(button);
+    }
+    
+    const closeButton = document.createElement('button');
+    closeButton.className = 'close-modal';
+    closeButton.textContent = '';
+    closeButton.addEventListener('click', function() {
+      closeModal(modal);
+    });
+    modal.appendChild(closeButton);
+
+    document.body.appendChild(modal);
+  }
+  
+  // Функция для закрытия модального окна
+  function closeModal(modal) {
+    document.body.removeChild(modal);
+  }
 });

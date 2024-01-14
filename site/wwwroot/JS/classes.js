@@ -10,8 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const container = document.querySelector('.classes-container');
     const owner = Object.keys(JSON.parse(localStorage.getItem('PUFAMIUser')))[0];
-    console.log(typeof(owner))
-    console.log(owner)
     let done = {};
     done[owner] = [];
 
@@ -26,8 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     localStorage.setItem('PUFAMIUserClass', JSON.stringify(done));
-
-
   })
   .catch(error => {
     console.error(error);

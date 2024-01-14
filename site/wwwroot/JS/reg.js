@@ -39,11 +39,12 @@ document.querySelector('.form-begin-like').addEventListener('submit', function (
     // Отправка запроса
     fetch('postuser', requestOptions)
         .then(response => {
-            if (!response.ok) {
+            if (!response.ok){
                 throw new Error('Network response was not ok');
             }
             localStorage.setItem('PUFAMIUser', JSON.stringify(user));
             window.location.href = "../work_space/classes.html"
+
             return response.json()
         })
         .catch(error => {
