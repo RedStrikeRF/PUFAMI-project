@@ -21,9 +21,10 @@ document.addEventListener("DOMContentLoaded", function() {
     e.preventDefault();
 
     const userData = {
-      name: inputName.value || content.name,
-      surname: inputSurname.value || content.surname,
-      avatar: new_avatar
+      name: inputName.value ? inputName.value : content.name,
+      surname: inputSurname.value ? inputSurname.value : content.surname,
+      avatar: new_avatar,
+      email: key
     };
     
     // Настройка запроса
