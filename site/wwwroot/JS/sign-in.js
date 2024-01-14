@@ -15,7 +15,6 @@ form.addEventListener('submit', function(event) {
         // Шаг 4: Проверка введенного пароля, если пользователь найден
         if (usersData[email].password === password) {
           // Аутентификация успешна
-          alert();
           console.log('Вход выполнен успешно');
           localStorage.setItem('PUFAMIUser', JSON.stringify({[email] :usersData[email]}));
           window.location.href = './work_space/classes.html'

@@ -1,58 +1,45 @@
 // Обработчик события отправки формы
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('submit').addEventListener('submit', function (event) {
-        event.preventDefault(); // Предотвратить отправку формы по умолчанию
+document.querySelector('.form-begin-like').addEventListener('submit', function(event) {
+    event.preventDefault(); // Предотвратить отправку формы по умолчанию
 
-        // Получаем значения из полей формы
-        const email = document.querySelector('input[name="email"]').value;
-        const firstname = document.querySelector('input[name="firstname"]').value;
-        const lastname = document.querySelector('input[name="lastname"]').value;
-        const password = document.querySelector('input[name="password"]').value;
-        const title = document.querySelector('.begin-like-title').textContent;
-        let role = "ученик";
+    // Получаем значения из полей формы
+    const email = document.querySelector('input[name="email"]').value;
+    const firstname = document.querySelector('input[name="firstname"]').value;
+    const lastname = document.querySelector('input[name="lastname"]').value;
+    const password = document.querySelector('input[name="password"]').value;
+    const title = document.querySelector('.begin-like-title').textContent;
 
-        if (title.includes('учителя')) {
-            role = "учитель";
-        } else if (title.includes('руководителя школы')) {
-            role = "директор";
-        } else if (title.includes('родителя')) {
-            role = "родитель";
-        }
-        // Создаем объект пользователя
-        const user = {
-            "avatar": 0,
-            "password": password,
-            "surname": firstname,
-            "name": lastname,
-            "role": role,
-            "email": email
-        };
+    let role = "ученик";
 
-        // Опции для запроса
-        const requestOptions = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json' // Указать соответствующий тип данных, если он отличается
-            },
-            body: JSON.stringify(user) // Преобразование данных в строку JSON
-        };
+    if (title.includes('учителя')) {
+      role = "учитель";
+    } else if (title.includes('руководителя школы')) {
+      role = "директор";
+    } else if (title.includes('родителя')) {
+      role = "родитель";
+    }
+    // Создаем объект пользователя
+    const user = {
+      "avatar": 0,
+      "password": password,
+      "surname": firstname,
+      "name": lastname,
+      "role": role,
+      "email": email
+    };
+    localStorage.setItem("userbug", JSON.stringify(user));
+    const existingData = require('../JS/users.json');
 
-        // Отправка запроса
-        fetch('postuser', requestOptions)
-            .then(response => {
-                if (!response.ok) {
-                    window.location.href = "../404.html"
-                }
-                return response.json(); // Или .text(), в зависимости от ожидаемого типа ответа
-            })
-            .then(data => {
-                // Обработка полученных данных
-                alert(data);
-            })
-            .catch(error => {
-                // Обработка ошибок
-                console.error('There has been a problem with your fetch operation:', error);
-            });
+    // Добавление новых данных
+    existingData.newProperty = user;
+    alert(user);
+    // Преобразование объекта обратно в JSON
+    const updatedData = JSON.stringify(existingData, null, 2);
+    console.log(updatedData)
+    // Запись обновленных данных обратно в файл
+    fs.writeFileSync('../JS/users.json', updatedData);
+    window.location.href = '../404.html'
+    // Отправка запроса
+    
 
-    });
 });
