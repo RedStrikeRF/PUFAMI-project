@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DCX4mifqbBVLDIZcSyNAPO1Nh5aByApdaqWkYrZCT3s=",
+  "Hash": "XlVsPjFj1d7S9p5lru89a4otMStEST799wQRngZI1pc=",
   "Source": "PUFAMI_Project",
   "BasePath": "_content/PUFAMI_Project",
   "Mode": "Default",
@@ -625,6 +625,25 @@
       "OriginalItemSpec": "wwwroot\\image\\avatars\\9.png"
     },
     {
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\cross-square-svgrepo-com.svg",
+      "SourceId": "PUFAMI_Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
+      "BasePath": "_content/PUFAMI_Project",
+      "RelativePath": "image/cross-square-svgrepo-com.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\cross-square-svgrepo-com.svg"
+    },
+    {
       "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\director.png",
       "SourceId": "PUFAMI_Project",
       "SourceType": "Discovered",
@@ -851,6 +870,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\JS\\sign-in.js"
+    },
+    {
+      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\students.js",
+      "SourceId": "PUFAMI_Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
+      "BasePath": "_content/PUFAMI_Project",
+      "RelativePath": "JS/students.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\JS\\students.js"
     },
     {
       "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\users.json",

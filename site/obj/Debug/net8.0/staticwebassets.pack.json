@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\JS\\sign-in.js"
     },
     {
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\students.js",
+      "PackagePath": "staticwebassets\\JS\\students.js"
+    },
+    {
       "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\users.json",
       "PackagePath": "staticwebassets\\JS\\users.json"
     },
@@ -155,6 +159,10 @@
     {
       "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\avatars\\9.png",
       "PackagePath": "staticwebassets\\image\\avatars\\9.png"
+    },
+    {
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\cross-square-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\image\\cross-square-svgrepo-com.svg"
     },
     {
       "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\director.png",

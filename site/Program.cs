@@ -70,6 +70,7 @@ namespace PUFAMI_Project
             var studentAuthenticationData = new StudentAuthenticationData();
 
             string jsonUsers = @"./wwwroot/JS/users.json";
+            string jsonClasses = @"./wwwroot/JS/classes.json";
 
             app.Run(async (context) =>
             {
@@ -164,6 +165,43 @@ namespace PUFAMI_Project
                             File.WriteAllText(jsonUsers, updatedJson);
                         }
                         GetEmail(email);
+                    }
+                    catch (WrongPasswordException)
+                    {
+                        throw new WrongPasswordException();
+                    }
+                    catch (UserNotFoundException)
+                    {
+                        throw new UserNotFoundException();
+                    }
+                }
+                if (context.Request.Path == "/work_space/addclass")
+                {
+                    var request = context.Request;
+                    string body = await new System.IO.StreamReader(request.Body).ReadToEndAsync();
+                    dynamic data = JObject.Parse(body);
+                    var id = (string)data.id;
+                    var name = (string)data.name;
+                    var graduate = (string)data.graduate;
+                    var owner = (string)data.owner;
+                    var structure = (List<Dictionary<string, int>>)data.structure;
+
+                    try
+                    {
+                        string fileContent = File.ReadAllText(jsonClasses);
+                        Class classes = JsonConvert.DeserializeObject<Class>(fileContent);
+
+                        //if (users.ContainsKey(email))
+                        //{
+                        //    users.Remove(email);
+                        //    User user = new User(avatar, password, surname, name, role, email);
+                        //    users.Add(email, user);
+
+                        //    string updatedJson = JsonConvert.SerializeObject(users, Formatting.Indented);
+
+                        //    File.WriteAllText(jsonUsers, updatedJson);
+                        //}
+                        GetEmail(name);
                     }
                     catch (WrongPasswordException)
                     {
