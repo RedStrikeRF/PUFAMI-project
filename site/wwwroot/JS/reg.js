@@ -9,14 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const lastname = document.querySelector('input[name="lastname"]').value;
     const password = document.querySelector('input[name="password"]').value;
     const title = document.querySelector('.begin-like-title').textContent;
-    let status = "ученик";
+    let role = "ученик";
 
     if (title.includes('учителя')) {
-      status = "учитель";
+      role = "учитель";
     } else if (title.includes('руководителя школы')) {
-      status = "директор";
+      role = "директор";
     } else if (title.includes('родителя')) {
-      status = "родитель";
+      role = "родитель";
     }
     // Создаем объект пользователя
     const user = {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
       "password": password,
       "surname": firstname,
       "name": lastname,
-      "status": status,
+      "role": role,
       "email": email
     };
 

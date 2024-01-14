@@ -10,4 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
   inputName.placeholder = data.name;
   inputSurname.placeholder = data.surname;
   avatar_choice.style.backgroundImage = `url('../image/avatars/${data.avatar}.png')`;
+
+  
 });
