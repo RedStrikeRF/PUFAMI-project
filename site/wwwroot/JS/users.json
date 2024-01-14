@@ -48,7 +48,7 @@
     "email": "example6@example.com"
   },
   "test@test.ru": {
-    "avatar": 0,
+    "avatar": 5,
     "password": "testtest",
     "surname": "Туранов",
     "name": "Юрий",
@@ -62,5 +62,37 @@
     "name": "hjgfhjk",
     "role": "ученик",
     "email": "xcfghjk@hgfdfghj"
+  },
+  "abrikos@mail.ru": {
+    "avatar": 0,
+    "password": "gggjdksjfs",
+    "surname": "Генадий",
+    "name": "Горин",
+    "role": "директор",
+    "email": "abrikos@mail.ru"
+  },
+  "jkdhfk@fdsf.ru": {
+    "avatar": 0,
+    "password": "dsfdsfds",
+    "surname": "fdfsd",
+    "name": "dsfds",
+    "role": "родитель",
+    "email": "jkdhfk@fdsf.ru"
+  },
+  "sddgfh@ghjkdsh": {
+    "avatar": 0,
+    "password": "hjkhdfkjhf",
+    "surname": "kjdhskfhkj",
+    "name": "jdkjsh",
+    "role": "директор",
+    "email": "sddgfh@ghjkdsh"
+  },
+  "fgdgfd@gfgfgfd": {
+    "avatar": 0,
+    "password": "fdgdfgdfg",
+    "surname": "dgdfgfdg",
+    "name": "gdfgfdg",
+    "role": "учитель",
+    "email": "fgdgfd@gfgfgfd"
   }
 }
