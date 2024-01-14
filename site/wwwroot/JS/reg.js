@@ -27,19 +27,22 @@ document.querySelector('.form-begin-like').addEventListener('submit', function(e
       "role": role,
       "email": email
     };
-    localStorage.setItem("userbug", JSON.stringify(user));
-    const existingData = require('../JS/users.json');
 
-    // Добавление новых данных
-    existingData.newProperty = user;
-    alert(user);
-    // Преобразование объекта обратно в JSON
-    const updatedData = JSON.stringify(existingData, null, 2);
-    console.log(updatedData)
-    // Запись обновленных данных обратно в файл
-    fs.writeFileSync('../JS/users.json', updatedData);
-    window.location.href = '../404.html'
+    const requestOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json' // Указать соответствующий тип данных, если он отличается
+      },
+      body: JSON.stringify(user) // Преобразование данных в строку JSON
+    };
+    
     // Отправка запроса
+    fetch('postuser', requestOptions)
+    .then()
+      .catch(error => {
+        // Обработка ошибок
+        console.error('There has been a problem with your fetch operation:', error);
+      });
     
 
 });
