@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const avatar_choice = document.querySelector('.avatar-choice');
   const data = JSON.parse(localStorage.getItem('PUFAMIUser'));
   const form = document.querySelector('.profile-form');
+  const status = document.querySelector('.status');
 
   const key = Object.keys(data)[0]
   const content = data[key];
@@ -14,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let new_avatar = content.avatar;
   inputName.placeholder = content.name;
   inputSurname.placeholder = content.surname;
+  status.textContent = content.role;
   avatar_choice.style.backgroundImage = `url('../image/avatars/${content.avatar}.png')`;
 
 
