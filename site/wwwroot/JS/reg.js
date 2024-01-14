@@ -38,16 +38,6 @@ document.querySelector('.form-begin-like').addEventListener('submit', function(e
     
     // Отправка запроса
     fetch('postuser', requestOptions)
-<<<<<<< Updated upstream
-    .then()
-      .catch(error => {
-        // Обработка ошибок
-        console.error('There has been a problem with your fetch operation:', error);
-      });
-    
-
-});
-=======
         .then(response => {
           if (response.ok) {
             localStorage.setItem('PUFAMIUser', JSON.stringify({[email] : user}));
@@ -59,4 +49,3 @@ document.querySelector('.form-begin-like').addEventListener('submit', function(e
             console.error('There has been a problem with your fetch operation:', error);
         });
 });
->>>>>>> Stashed changes
