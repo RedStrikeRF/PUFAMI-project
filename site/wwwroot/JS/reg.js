@@ -9,14 +9,16 @@ document.querySelector('.form-begin-like').addEventListener('submit', function (
     const password = document.querySelector('input[name="password"]').value;
     const title = document.querySelector('.begin-like-title').textContent;
 
-    let role = "ученик";
-
+    
+    let role = 'ученик'
     if (title.includes('учителя')) {
-        role = "учитель";
+        const role = "учитель";
     } else if (title.includes('руководителя школы')) {
-        role = "директор";
+        const role = "директор";
     } else if (title.includes('родителя')) {
-        role = "родитель";
+        const role = "родитель";
+    } else {
+        const role = "ученик"
     }
     // Создаем объект пользователя
     const user = {
@@ -38,7 +40,7 @@ document.querySelector('.form-begin-like').addEventListener('submit', function (
 
     // Отправка запроса
     fetch('postuser', requestOptions)
-        .then(response => { alert(response.json()) })
+        .then(response => response.json())
         .then(data => {
             // Обработка полученных данных
             alert(data);

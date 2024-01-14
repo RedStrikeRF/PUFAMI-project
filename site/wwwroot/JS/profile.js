@@ -20,12 +20,14 @@ document.addEventListener("DOMContentLoaded", function() {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const userData = {
+    let newUser = {key : {
       name: inputName.value ? inputName.value : content.name,
       surname: inputSurname.value ? inputSurname.value : content.surname,
       avatar: new_avatar,
-      email: key
-    };
+      email: content.email,
+      password: content.password,
+      role: content.role,
+    }}
     
     // Настройка запроса
     const requestOptions = {
@@ -33,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(userData)
+      body: JSON.stringify(newUser)
     };
     
     // Отправка запроса на сервер
@@ -45,15 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
         return response.json(); // Или .text(), в зависимости от ожидаемого типа ответа
       })
       .then(data => {
-
-        let newUser = {key : {
-          name: userData.name,
-          surname: userData.surname,
-          avatar: userData.avatar,
-          email: content.email,
-          password: content.password,
-          role: content.role,
-        }}
         // Обработка полученных данных
         localStorage.setItem('PUFAMIUser', JSON.stringify(newUser));
       })
