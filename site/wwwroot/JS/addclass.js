@@ -5,6 +5,22 @@ document.querySelector('.form').addEventListener('submit', function(event) {
   const className = document.querySelector('input[name="class_name"]').value;
   const classData = document.querySelector('input[name="class"]').value;
   const user = localStorage.getItem("PUFAMIUser");
+
+  fetch('../JS/classes.json')
+  .then(response => {
+    if (!response.ok) {
+      window.location.href = '../404.html'
+    }
+    return response.json();
+  })
+  .then(data => {
+    const id = Object.keys(data).length;
+    });
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
   const classes = JSON.stringify({
     [id]:
       {
