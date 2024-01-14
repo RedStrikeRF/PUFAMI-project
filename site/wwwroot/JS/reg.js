@@ -28,31 +28,34 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // Загружаем текущий users.json файл
-    fetch('../JS/users.json')
-      .then(response => response.json())
-      .then(data => {
-        // Добавляем нового пользователя в объект JSON
-        data[email] = user;
-        console.log(data);
-        // Записываем обновленные данные обратно в users.json
-        fetch('../JS/users.json', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(data)
-        })
-        .then(result => {
-          alert('Пользователь успешно добавлен в users.json', result);
-          // Можно выполнить дополнительные действия после успешной записи, например, перенаправить пользователя на другую страницу
-        })
-        .catch(error => {
-          alert('Произошла ошибка при добавлении пользователя в users.json', error);
-        });
+    // Данные, которые вы хотите отправить
+    
+
+    // Опции для запроса
+    const requestOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json' // Указать соответствующий тип данных, если он отличается
+      },
+      body: JSON.stringify(user) // Преобразование данных в строку JSON
+    };
+
+    // Отправка запроса
+    fetch('postuser', requestOptions)
+      .then(response => {
+        if (!response.ok) {
+          window.location.href = "../404.html"
+        }
+        return response.json(); // Или .text(), в зависимости от ожидаемого типа ответа
       })
-      // .then(window.location.href = '../work_space/classes.html')
+      .then(data => {
+        // Обработка полученных данных
+        console.log(data);
+      })
       .catch(error => {
-        console.error('Произошла ошибка при загрузке users.json', error);
+        // Обработка ошибок
+        console.error('There has been a problem with your fetch operation:', error);
       });
+
   });
 });
