@@ -8,32 +8,33 @@
   <link rel="stylesheet" href="../../css/registration_css/welcome_page.css">
   <link rel="stylesheet" href="../../css/registration_css/begin_like.css">
   <link rel="stylesheet" href="../../css/registration_css/register_as.css">
+  <script defer src="../JS/reg.js"></script>
 </head>
 <body>
-  <header class="header">
-    <a class="header-logo" href="../welcome_page.html">
-      <img class="header-logo-img" src="../../image/logo.jpg" alt="школа номер 18">
-      <div class="header-logo-content-container">
-        <h2 class="header-title">МАОУ СОШ &#8470;&nbsp;18</h2>
-        <p class="header-descr">Екатеринбург, улица Авиационная, 18</p>
-      </div>
-    </a>
-  </header>
-  <main class="main">
-    <div class="main-container">
-      <form method="post" class="form-begin-like">
-        <h3 class="begin-like-title">Создать учётную запись родителя</h3>
-        <span class="begin-like-span">
-          <p>Уже есть учётная запись?</p>
-          <a href="../sigh_in.html">Войти в систему</a>
-        </span>
-        <input type="email" placeholder="Адрес электронной почты" title="Пожалуйста, заполните это поле">
-        <input type="text" placeholder="Имя" title="Пожалуйста, заполните это поле">
-        <input type="text" placeholder="Фамилия" title="Пожалуйста, заполните это поле">
-        <input type="password" placeholder="Пароль" title="Пожалуйста, заполните это поле">
-        <button type="submit">Зарегистрироваться</button>
-      </form>
-    </div>
-  </main>
+    <header class="header">
+        <a class="header-logo" href="../welcome_page.html">
+            <img class="header-logo-img" src="../../image/logo.jpg" alt="школа номер 18">
+            <div class="header-logo-content-container">
+                <h2 class="header-title">МАОУ СОШ &#8470;&nbsp;18</h2>
+                <p class="header-descr">Екатеринбург, улица Авиационная, 18</p>
+            </div>
+        </a>
+    </header>
+    <main class="main">
+        <div class="main-container">
+            <form method="post" class="form-begin-like">
+                <h3 class="begin-like-title">Создать учётную запись родителя</h3>
+                <span class="begin-like-span">
+                  <p>Уже есть учётная запись?</p>
+                  <a href="../sigh_in.html">Войти в систему</a>
+                </span>
+                <input type="email" name="email" placeholder="Адрес электронной почты" title="Пожалуйста, заполните это поле">
+                <input type="text" name="firstname" placeholder="Имя" title="Пожалуйста, заполните это поле">
+                <input type="text" name="lastname" placeholder="Фамилия" title="Пожалуйста, заполните это поле">
+                <input type="password" name="password" placeholder="Пароль" title="Пожалуйста, заполните это поле">
+                <button id="submit">Зарегистрироваться</button>
+              </form>
+        </div>
+    </main>
 </body>
 </html>

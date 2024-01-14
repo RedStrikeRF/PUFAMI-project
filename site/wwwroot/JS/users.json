@@ -1,0 +1,16 @@
+{
+  "example1@example.com": {
+    "avatar": 0,
+    "password": "examplePassword1",
+    "firstname": "Иван",
+    "lastname": "Иванов",
+    "status": "учитель"
+  },
+  "example2@example.com": {
+    "avatar": 0,
+    "password": "examplePassword2",
+    "firstname": "Петр",
+    "lastname": "Петров",
+    "status": "учитель"
+  }
+}
