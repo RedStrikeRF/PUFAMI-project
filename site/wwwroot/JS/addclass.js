@@ -6,9 +6,10 @@ document.querySelector('.form').addEventListener('submit', function(event) {
   const classData = document.querySelector('input[name="class"]').value;
   const user = localStorage.getItem("PUFAMIUser");
   let userClasses = localStorage.getItem("PUFAMIUserClass");
-  let newClass = {}
-  let temp = 
+  let newClass = {};
+  let Class = {};
   let id = 0;
+
   fetch('../JS/classes.json')
   .then(response => {
     if (!response.ok) {
@@ -26,7 +27,7 @@ document.querySelector('.form').addEventListener('submit', function(event) {
       "owner": user,
       "structure" : {}
     }
-    const Class = JSON.stringify({
+    Class = JSON.stringify({
       [id]: newClass
         
       });

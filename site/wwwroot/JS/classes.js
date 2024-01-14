@@ -16,10 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Перебираем полученные данные
     Object.keys(data).forEach(key => {
       const item = data[key];
-
       if (item.owner == owner) {
         done[owner].push(item);
-        container.append(drawClass(item.name, item.graduate))
+        container.append(drawClass(key, item.name, item.graduate))
       }
     });
 
@@ -31,11 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 
-function drawClass(className, classSpecification) {
+function drawClass(id, className, classSpecification) {
   const button = document.createElement('button');
   const title = document.createElement('h3');
   const descr = document.createElement('p');
-
   button.classList.add("class-container", "added-class");
   title.classList.add("class-title");
   descr.classList.add("class-number");
@@ -47,7 +45,7 @@ function drawClass(className, classSpecification) {
   button.append(descr);
 
   button.addEventListener('click', () => {
-    localStorage.setItem('PUFAMICurrentClass', )
+    localStorage.setItem('PUFAMICurrentClassId', id)
   });
 
   return button;
