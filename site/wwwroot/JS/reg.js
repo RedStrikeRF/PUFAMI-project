@@ -24,12 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
       "password": password,
       "surname": firstname,
       "name": lastname,
-      "status": status
+      "status": status,
+      "email": email
     };
-
-    // Загружаем текущий users.json файл
-    // Данные, которые вы хотите отправить
-    
 
     // Опции для запроса
     const requestOptions = {
