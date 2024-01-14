@@ -1,6 +1,6 @@
 // Обработчик события отправки формы
 document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('submit').addEventListener('click', function(event) {
+  document.getElementById('submit').addEventListener('submit', function(event) {
     event.preventDefault(); // Предотвратить отправку формы по умолчанию
 
     // Получаем значения из полей формы
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
           console.error('Произошла ошибка при добавлении пользователя в users.json', error);
         });
       })
-      .then(window.location.href = '')
+      .then(window.location.href = '../work_space/classes.html')
       .catch(error => {
         console.error('Произошла ошибка при загрузке users.json', error);
       });

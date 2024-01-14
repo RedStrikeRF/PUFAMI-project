@@ -1,33 +1,31 @@
-let email;
-document.addEventListener('DOMContentLoaded', function() {
-  
-  const form = document.querySelector('form');
-  
-  console.log(email);
-  form.addEventListener('submit', async function(event) {
-    event.preventDefault();
-    email = document.querySelector('.mail-input').value;
-    const password = document.querySelector('.password-input').value;
+// Шаг 1: Получение данных из формы
+const form = document.querySelector('.form-sign-in');
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Предотвращение отправки формы
 
-    // Отправка запроса на сервер
-    await fetch('https://jsonplaceholder.typicode.com/posts', {
-      method: 'GET',
-      /* headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ email: email, password: password }) */
-    })
+  const email = form.email.value;
+  const password = form.password.value;
+
+  // Шаг 2: Чтение содержимого файла users.json и преобразование в объект JavaScript
+  fetch('JS/users.json')
     .then(response => response.json())
-    .then(data => {
-      // Обработка ответа от сервера ASP.NET
-      console.log('Полученный ответ от сервера:', data);
-      localStorage.setItem(email, data);
-      
-      window.location.href = '../work_space/classes.html';
-      // Ваш код для обработки полученных данных
+    .then(usersData => {
+      // Шаг 3: Проверка, существует ли введенный пользователем email в списке пользователей
+      if (usersData[email]) {
+        // Шаг 4: Проверка введенного пароля, если пользователь найден
+        if (usersData[email].password === password) {
+          // Аутентификация успешна
+          console.log('Вход выполнен успешно');
+        } else {
+          // Неправильный пароль
+          alert('Неправильный пароль');
+        }
+      } else {
+        // Пользователь не найден
+        alert('Пользователь не найден');
+      }
     })
     .catch(error => {
-      console.log('Произошла ошибка:', error);
+      console.error('Произошла ошибка при получении данных из файла users.json', error);
     });
-  });
 });
