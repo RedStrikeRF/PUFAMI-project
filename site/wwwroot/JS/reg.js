@@ -38,6 +38,7 @@ document.querySelector('.form-begin-like').addEventListener('submit', function(e
     
     // Отправка запроса
     fetch('postuser', requestOptions)
+<<<<<<< Updated upstream
     .then()
       .catch(error => {
         // Обработка ошибок
@@ -46,3 +47,16 @@ document.querySelector('.form-begin-like').addEventListener('submit', function(e
     
 
 });
+=======
+        .then(response => {
+          if (response.ok) {
+            localStorage.setItem('PUFAMIUser', JSON.stringify({[email] : user}));
+            window.location.href = '../work_space/classes.html';
+          }
+        })
+        .catch(error => {
+            // Обработка ошибок
+            console.error('There has been a problem with your fetch operation:', error);
+        });
+});
+>>>>>>> Stashed changes
