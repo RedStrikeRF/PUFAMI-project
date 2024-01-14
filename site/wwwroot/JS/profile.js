@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
       password: content.password,
       role: content.role,
     }
+    localStorage.setItem('PUFAMIUser', JSON.stringify({[key]: newUser}));
     
     // Настройка запроса
     const requestOptions = {
@@ -45,10 +46,6 @@ document.addEventListener("DOMContentLoaded", function() {
           throw new Error('Network response was not ok');
         }
         return response.json(); // Или .text(), в зависимости от ожидаемого типа ответа
-      })
-      .then(data => {
-        // Обработка полученных данных
-        localStorage.setItem('PUFAMIUser', JSON.stringify({[key]: newUser}));
       })
       .catch(error => {
         // Обработка ошибок
