@@ -49,10 +49,6 @@
       "PackagePath": "staticwebassets\\css\\normalize.css"
     },
     {
-      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\profile.css",
-      "PackagePath": "staticwebassets\\css\\profile.css"
-    },
-    {
       "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\registration_css\\begin_like.css",
       "PackagePath": "staticwebassets\\css\\registration_css\\begin_like.css"
     },

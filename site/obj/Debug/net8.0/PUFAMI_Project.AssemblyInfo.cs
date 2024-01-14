@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PUFAMI_Project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7a5c10023d16e4dab1435528a3e4c43ea01a2ee")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f51206d1765c819406ba163bcb123d2bb94e7cc8")]
 [assembly: System.Reflection.AssemblyProductAttribute("PUFAMI_Project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PUFAMI_Project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

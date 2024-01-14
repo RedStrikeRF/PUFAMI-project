@@ -20,14 +20,14 @@ document.addEventListener("DOMContentLoaded", function() {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    let newUser = {key : {
-      name: inputName.value ? inputName.value : content.name,
-      surname: inputSurname.value ? inputSurname.value : content.surname,
-      avatar: new_avatar,
-      email: content.email,
-      password: content.password,
-      role: content.role,
-    }}
+      let newUser = {
+              name: inputName.value ? inputName.value : content.name,
+              surname: inputSurname.value ? inputSurname.value : content.surname,
+              avatar: new_avatar,
+              email: content.email,
+              password: content.password,
+              role: content.role
+      }
     
     // Настройка запроса
     const requestOptions = {
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
       })
       .then(data => {
         // Обработка полученных данных
-        localStorage.setItem('PUFAMIUser', JSON.stringify(newUser));
+        localStorage.setItem('PUFAMIUser', JSON.stringify({ [key]: newUser }));
       })
       .catch(error => {
         // Обработка ошибок

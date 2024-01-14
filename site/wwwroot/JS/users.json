@@ -50,8 +50,8 @@
   "test@test.ru": {
     "avatar": 0,
     "password": "testtest",
-    "surname": "test",
-    "name": "test",
+    "surname": "Туранов",
+    "name": "Юрий",
     "role": "ученик",
     "email": "test@test.ru"
   },
