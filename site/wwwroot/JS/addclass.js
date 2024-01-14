@@ -50,7 +50,7 @@ document.querySelector('.form').addEventListener('submit', function(event) {
       })
       .then(data => {
         userClasses.id = Class;
-        localStorage.setItem('PUFAMICurrentClass', Class);
+        localStorage.setItem('PUFAMICurrentClassId', id);
         localStorage.setItem("PUFAMIUserClass", userClasses);
         window.location.href = '../work_space/add_student.html'
       })

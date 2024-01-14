@@ -47,7 +47,7 @@ function drawClass(className, classSpecification) {
   button.append(descr);
 
   button.addEventListener('click', () => {
-
+    localStorage.setItem("PUFAMICurrentStudent", email)
   });
 
   return button;

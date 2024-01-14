@@ -10,17 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const container = document.querySelector('.classes-container');
     const owner = Object.keys(JSON.parse(localStorage.getItem('PUFAMIUser')))[0];
+    console.log(owner)
     let done = {};
     done[owner] = [];
 
     // Перебираем полученные данные
-    Object.keys(data).forEach(key => {
-      const item = data[key];
+    Object.keys(data).forEach(id => {
+      const item = data[id];
       if (item.owner == owner) {
         done[owner].push(item);
-        container.append(drawClass(key, item.name, item.graduate))
+        container.append(drawClass(id, item.name, item.graduate))
       }
-    });
+    }); 
 
     localStorage.setItem('PUFAMIUserClass', JSON.stringify(done));
   })
