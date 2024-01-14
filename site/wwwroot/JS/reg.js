@@ -42,7 +42,7 @@ document.querySelector('.form-begin-like').addEventListener('submit', function (
             if (!response.ok){
                 throw new Error('Network response was not ok');
             }
-            localStorage.setItem('PUFAMIUser', JSON.stringify(user));
+            localStorage.setItem('PUFAMIUser', JSON.stringify({[email]: user}));
             window.location.href = "../work_space/classes.html"
 
             return response.json()
