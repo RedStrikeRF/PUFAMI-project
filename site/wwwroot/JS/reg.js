@@ -1,6 +1,5 @@
 // Обработчик события отправки формы
-document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('submit').addEventListener('submit', function(event) {
+document.querySelector('.form-begin-like').addEventListener('submit', function(event) {
     event.preventDefault(); // Предотвратить отправку формы по умолчанию
 
     // Получаем значения из полей формы
@@ -9,14 +8,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const lastname = document.querySelector('input[name="lastname"]').value;
     const password = document.querySelector('input[name="password"]').value;
     const title = document.querySelector('.begin-like-title').textContent;
-    let status = "ученик";
+
+    let role = "ученик";
 
     if (title.includes('учителя')) {
-      status = "учитель";
+      role = "учитель";
     } else if (title.includes('руководителя школы')) {
-      status = "директор";
+      role = "директор";
     } else if (title.includes('родителя')) {
-      status = "родитель";
+      role = "родитель";
     }
     // Создаем объект пользователя
     const user = {
@@ -24,35 +24,22 @@ document.addEventListener('DOMContentLoaded', function() {
       "password": password,
       "surname": firstname,
       "name": lastname,
-      "status": status
+      "role": role,
+      "email": email
     };
+    localStorage.setItem("userbug", JSON.stringify(user));
+    const existingData = require('../JS/users.json');
 
-    // Загружаем текущий users.json файл
-    fetch('../JS/users.json')
-      .then(response => response.json())
-      .then(data => {
-        // Добавляем нового пользователя в объект JSON
-        data[email] = user;
-        console.log(data);
-        // Записываем обновленные данные обратно в users.json
-        fetch('../JS/users.json', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(data)
-        })
-        .then(result => {
-          alert('Пользователь успешно добавлен в users.json', result);
-          // Можно выполнить дополнительные действия после успешной записи, например, перенаправить пользователя на другую страницу
-        })
-        .catch(error => {
-          alert('Произошла ошибка при добавлении пользователя в users.json', error);
-        });
-      })
-      // .then(window.location.href = '../work_space/classes.html')
-      .catch(error => {
-        console.error('Произошла ошибка при загрузке users.json', error);
-      });
-  });
+    // Добавление новых данных
+    existingData.newProperty = user;
+    alert(user);
+    // Преобразование объекта обратно в JSON
+    const updatedData = JSON.stringify(existingData, null, 2);
+    console.log(updatedData)
+    // Запись обновленных данных обратно в файл
+    fs.writeFileSync('../JS/users.json', updatedData);
+    window.location.href = '../404.html'
+    // Отправка запроса
+    
+
 });
