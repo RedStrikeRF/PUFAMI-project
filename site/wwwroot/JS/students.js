@@ -48,6 +48,7 @@ function drawClass(className, classSpecification) {
 
   button.addEventListener('click', () => {
     localStorage.setItem("PUFAMICurrentStudent", email)
+    window.location.href = "../add_"
   });
 
   return button;

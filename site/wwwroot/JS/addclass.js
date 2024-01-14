@@ -25,11 +25,11 @@ document.querySelector('.form').addEventListener('submit', function(event) {
       "name": className,
       "graduate": classData,
       "owner": user,
-      "structure" : {}
+      "structure" : {},
+      id
     }
     Class = JSON.stringify({
       [id]: newClass
-        
       });
     // Настройка запроса
     const requestOptions = {
