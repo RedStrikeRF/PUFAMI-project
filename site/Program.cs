@@ -2,12 +2,12 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using PUFAMI_Project.BLL.Exceptions;
 using PUFAMI_Project.BLL.Models;
 using PUFAMI_Project.BLL.Services;
 using PUFAMI_Project.Data;
-using System.Text.Json;
 
 namespace PUFAMI_Project
 {
@@ -74,25 +74,32 @@ namespace PUFAMI_Project
                 context.Response.ContentType = "text/html; charset=utf-8";
 
                 // если обращение идет по адресу "/postuser", получаем данные формы
-                if (context.Request.Path == "/postuser")
+                if (context.Request.Path == "/registration_list/postuser")
                 {
                     var request = context.Request;
                     string body = await new System.IO.StreamReader(request.Body).ReadToEndAsync();
                     dynamic data = JObject.Parse(body);
-                    var avatar = data.avatar;
-                    var password = data.password;
-                    var surname = data.surname;
-                    var name = data.name;
-                    var role = data.role;
-                    var email = data.email;
+                    var avatar = (string)data.avatar;
+                    var password = (string)data.password;
+                    var surname = (string)data.surname;
+                    var name = (string)data.name;
+                    var role = (string)data.role;
+                    var email = (string)data.email;
+
+                    string jsonFilePath = @"./wwwroot/JS/users.json";
 
                     try
                     {
+                        string fileContent = File.ReadAllText(jsonFilePath);
+                        Dictionary<string, User> users = JsonConvert.DeserializeObject<Dictionary<string, User>>(fileContent);
                         User user = new User(avatar, password, surname, name, role, email);
-                        var options = new JsonSerializerOptions { WriteIndented = true };
-                        string json = JsonSerializer.Serialize(user, options);
 
-                        File.WriteAllText(@"./wwwroot/JS/users.json", json);
+                        users.Add(email, user);
+
+                        string updatedJson = JsonConvert.SerializeObject(users, Formatting.Indented);
+
+                        File.WriteAllText(jsonFilePath, updatedJson);
+                        GetEmail(email);
                     }
                     catch (ArgumentNullException)
                     {
@@ -126,6 +133,11 @@ namespace PUFAMI_Project
             });
 
             app.Run();
+        }
+
+        public static string GetEmail(string email)
+        {
+            return email;
         }
     }
 }

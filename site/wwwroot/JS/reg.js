@@ -1,5 +1,5 @@
 // Обработчик события отправки формы
-document.querySelector('.form-begin-like').addEventListener('submit', function(event) {
+document.querySelector('.form-begin-like').addEventListener('submit', function (event) {
     event.preventDefault(); // Предотвратить отправку формы по умолчанию
 
     // Получаем значения из полей формы
@@ -12,34 +12,41 @@ document.querySelector('.form-begin-like').addEventListener('submit', function(e
     let role = "ученик";
 
     if (title.includes('учителя')) {
-      role = "учитель";
+        role = "учитель";
     } else if (title.includes('руководителя школы')) {
-      role = "директор";
+        role = "директор";
     } else if (title.includes('родителя')) {
-      role = "родитель";
+        role = "родитель";
     }
     // Создаем объект пользователя
     const user = {
-      "avatar": 0,
-      "password": password,
-      "surname": firstname,
-      "name": lastname,
-      "role": role,
-      "email": email
+        "avatar": 0,
+        "password": password,
+        "surname": firstname,
+        "name": lastname,
+        "role": role,
+        "email": email
     };
-    localStorage.setItem("userbug", JSON.stringify(user));
-    const existingData = require('../JS/users.json');
 
-    // Добавление новых данных
-    existingData.newProperty = user;
-    alert(user);
-    // Преобразование объекта обратно в JSON
-    const updatedData = JSON.stringify(existingData, null, 2);
-    console.log(updatedData)
-    // Запись обновленных данных обратно в файл
-    fs.writeFileSync('../JS/users.json', updatedData);
-    window.location.href = '../404.html'
+    const requestOptions = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json' // Указать соответствующий тип данных, если он отличается
+        },
+        body: JSON.stringify(user) // Преобразование данных в строку JSON
+    };
+
     // Отправка запроса
-    
+    fetch('postuser', requestOptions)
+        .then(response => { alert(response.json()) })
+        .then(data => {
+            // Обработка полученных данных
+            alert(data);
+        })
+        .catch(error => {
+            // Обработка ошибок
+            console.error('There has been a problem with your fetch operation:', error);
+        });
+
 
 });

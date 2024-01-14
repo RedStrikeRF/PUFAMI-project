@@ -9,9 +9,9 @@
         public string role { get; set; }
         public string email { get; set; }
 
-        public User(int avatar, string password, string surname, string name, string role, string email)
+        public User(string avatar, string password, string surname, string name, string role, string email)
         {
-            this.avatar = avatar;
+            this.avatar = int.Parse(avatar);
             this.password = password;
             this.surname = surname;
             this.name = name;
