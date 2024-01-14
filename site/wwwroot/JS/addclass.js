@@ -49,7 +49,12 @@ document.querySelector('.form').addEventListener('submit', function(event) {
         return response.json();
       })
       .then(data => {
-        userClasses.id = newClass;
+        userClasses.id = {
+          "name":newClass.name,
+          "graduate":newClass.graduate,
+          "owner":newClass.owner,
+          "structure":newClass.structure,
+        };
         localStorage.setItem('PUFAMICurrentClassId', JSON.stringify(id));
         localStorage.setItem("PUFAMIUserClass", userClasses);
         window.location.href = '../work_space/add_student.html'
