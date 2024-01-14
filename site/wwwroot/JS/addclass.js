@@ -15,7 +15,6 @@ document.querySelector('.form').addEventListener('submit', function(event) {
   })
   .then(data => {
     const id = Object.keys(data).length;
-    });
   })
   .catch(error => {
     console.error(error);
