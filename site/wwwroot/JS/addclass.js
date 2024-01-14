@@ -5,7 +5,10 @@ document.querySelector('.form').addEventListener('submit', function(event) {
   const className = document.querySelector('input[name="class_name"]').value;
   const classData = document.querySelector('input[name="class"]').value;
   const user = localStorage.getItem("PUFAMIUser");
-
+  let userClasses = localStorage.getItem("PUFAMIUserClass");
+  let newClass = {}
+  let temp = 
+  let id = 0;
   fetch('../JS/classes.json')
   .then(response => {
     if (!response.ok) {
@@ -14,45 +17,52 @@ document.querySelector('.form').addEventListener('submit', function(event) {
     return response.json();
   })
   .then(data => {
-    const id = Object.keys(data).length;
+    id = Object.keys(data).length;
   })
+  .then(temp => {
+    newClass = {
+      "name": className,
+      "graduate": classData,
+      "owner": user,
+      "structure" : {}
+    }
+    const Class = JSON.stringify({
+      [id]: newClass
+        
+      });
+    // Настройка запроса
+    const requestOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: Class
+    };
+  
+    // Отправка запроса на сервер
+    fetch('addclass', requestOptions)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        userClasses.id = Class;
+        localStorage.setItem('PUFAMICurrentClass', Class);
+        localStorage.setItem("PUFAMIUserClass", userClasses);
+        window.location.href = '../work_space/add_student.html'
+      })
+      .catch(error => {
+        // Обработка ошибок
+        console.error('Произошла ошибка:', error);
+        // Добавьте здесь обработку ошибок
+      });
+    }
+  )
   .catch(error => {
     console.error(error);
   });
 
-  const classes = JSON.stringify({
-    [id]:
-      {
-        "name": className,
-        "graduate": classData,
-        "owner": Object.keys(user)[0],
-        "structure" : {}
-      }
-    });
-  // Настройка запроса
-  const requestOptions = {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: classes
-  };
-
-  // Отправка запроса на сервер
-  fetch('addclass', requestOptions)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
-    .then(data => {
-      let classes = localStorage.setItem('PUFAMIUserClass', classes);
-      window.location.href = '../work_space/add_student.html'
-    })
-    .catch(error => {
-      // Обработка ошибок
-      console.error('Произошла ошибка:', error);
-      // Добавьте здесь обработку ошибок
-    });
+  
 });
