@@ -33,6 +33,7 @@ document.querySelector('.form').addEventListener('submit', function(event) {
     })
     .then(data => {
       let classes = localStorage.setItem('PUFAMIUserClass', classes);
+      window.location.href = '../work_space/add_student.html'
     })
     .catch(error => {
       // Обработка ошибок
