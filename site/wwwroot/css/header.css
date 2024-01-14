@@ -8,7 +8,7 @@
 @font-face { 
   font-family: "Gotham Pro";
   src: url("../fonts/GothamProRegular.ttf") format("truetype");
-  font-style: normal;
+  font-style: 400;
   font-weight: normal;
 }
 
