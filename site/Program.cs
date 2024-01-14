@@ -69,6 +69,8 @@ namespace PUFAMI_Project
             var studentRegistrationData = new StudentRegistrationData();
             var studentAuthenticationData = new StudentAuthenticationData();
 
+            string jsonUsers = @"./wwwroot/JS/users.json";
+
             app.Run(async (context) =>
             {
                 context.Response.ContentType = "text/html; charset=utf-8";
@@ -86,11 +88,9 @@ namespace PUFAMI_Project
                     var role = (string)data.role;
                     var email = (string)data.email;
 
-                    string jsonFilePath = @"./wwwroot/JS/users.json";
-
                     try
                     {
-                        string fileContent = File.ReadAllText(jsonFilePath);
+                        string fileContent = File.ReadAllText(jsonUsers);
                         Dictionary<string, User> users = JsonConvert.DeserializeObject<Dictionary<string, User>>(fileContent);
                         User user = new User(avatar, password, surname, name, role, email);
 
@@ -100,23 +100,19 @@ namespace PUFAMI_Project
                             status = ""
                         };
 
-                        foreach (var userEmail in users.Keys)
+                        if (!users.ContainsKey(email))
                         {
-                            if (userEmail != email)
+                            responseData = new
                             {
-                                responseData = new
-                                {
-                                    status = "success"
-                                };
-                            }
-                            else
+                                status = "success"
+                            };
+                        }
+                        else
+                        {
+                            responseData = new
                             {
-                                responseData = new
-                                {
-                                    status = "failure"
-                                };
-                                break;
-                            }
+                                status = "failure"
+                            };
                         }
 
                         string jsonResponse = JsonConvert.SerializeObject(responseData);
@@ -128,7 +124,7 @@ namespace PUFAMI_Project
 
                         string updatedJson = JsonConvert.SerializeObject(users, Formatting.Indented);
 
-                        File.WriteAllText(jsonFilePath, updatedJson);
+                        File.WriteAllText(jsonUsers, updatedJson);
                         GetEmail(email);
                     }
                     catch (ArgumentNullException)
@@ -140,16 +136,34 @@ namespace PUFAMI_Project
                         throw new Exception(ex.Message);
                     }
                 }
-                if (context.Request.Path == "/getuser")
+                if (context.Request.Path == "/update")
                 {
-                    var form = context.Request.Form;
-                    studentAuthenticationData.Email = form["email"];
-                    studentAuthenticationData.Password = form["password"];
+                    var request = context.Request;
+                    string body = await new System.IO.StreamReader(request.Body).ReadToEndAsync();
+                    dynamic data = JObject.Parse(body);
+                    var avatar = (string)data.avatar;
+                    var password = (string)data.password;
+                    var surname = (string)data.surname;
+                    var name = (string)data.name;
+                    var role = (string)data.role;
+                    var email = (string)data.email;
 
                     try
                     {
-                        Student student = studentService.Authenticate(studentAuthenticationData);
-                        await context.Response.SendFileAsync(@"./wwwroot/work_space/profile.html");
+                        string fileContent = File.ReadAllText(jsonUsers);
+                        Dictionary<string, User> users = JsonConvert.DeserializeObject<Dictionary<string, User>>(fileContent);
+
+                        if (users.ContainsKey(email))
+                        {
+                            users.Remove(email);
+                            User user = new User(avatar, password, surname, name, role, email);
+                            users.Add(email, user);
+
+                            string updatedJson = JsonConvert.SerializeObject(users, Formatting.Indented);
+
+                            File.WriteAllText(jsonUsers, updatedJson);
+                        }
+                        GetEmail(email);
                     }
                     catch (WrongPasswordException)
                     {

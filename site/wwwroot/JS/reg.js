@@ -9,7 +9,7 @@ document.querySelector('.form-begin-like').addEventListener('submit', function (
     const password = document.querySelector('input[name="password"]').value;
     const title = document.querySelector('.begin-like-title').textContent;
 
-    
+
     let role = 'ученик'
     if (title.includes('учителя')) {
         role = "учитель";
@@ -44,7 +44,9 @@ document.querySelector('.form-begin-like').addEventListener('submit', function (
             }
             localStorage.setItem('PUFAMIUser', JSON.stringify(user));
             window.location.href = "../work_space/classes.html"
-            return response.json()})
+
+            return response.json()
+        })
         .catch(error => {
             // Обработка ошибок
             console.error('There has been a problem with your fetch operation:', error);

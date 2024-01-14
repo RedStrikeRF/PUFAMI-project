@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WDZTsAviC9PQBjr5Mj0cqiWN2qA5ZPeH2/JTqH8Txkc=",
+  "Hash": "DCX4mifqbBVLDIZcSyNAPO1Nh5aByApdaqWkYrZCT3s=",
   "Source": "PUFAMI_Project",
   "BasePath": "_content/PUFAMI_Project",
   "Mode": "Default",
@@ -110,25 +110,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\normalize.css"
-    },
-    {
-      "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\profile.css",
-      "SourceId": "PUFAMI_Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\",
-      "BasePath": "_content/PUFAMI_Project",
-      "RelativePath": "css/profile.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\profile.css"
     },
     {
       "Identity": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\registration_css\\begin_like.css",
