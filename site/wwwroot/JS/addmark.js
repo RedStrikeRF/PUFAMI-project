@@ -2,7 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const container = document.querySelector('.mark-container');
   const skills = ['Помощь другим', 'Работа в команде', 'Усердная работа', 'Активное участие', 'Плохое поведение', 'Нет домашней работы', 'Опоздание']; // список навыков
   const userEmail = localStorage.getItem("PUFAMICurrentStudent");
-  console.log(userEmail); // ваш email для использования в качестве ключа
+  const allClasses = JSON.parse(localStorage.getItem("PUFAMIAllClassesMain"));
+  const userClasses = JSON.parse(localStorage.getItem("PUFAMIUserClass"));
+  const currentClass = JSON.parse(localStorage.getItem("PUFAMICurrentClassId"))
+  
 
   // Создаем кнопки с цифрами и добавляем их в контейнер
   const skillCounts = {}; // объект для отслеживания количества кликов на каждый навык
@@ -21,9 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', () => {
       // Проверяем, сделано ли уже максимальное количество кликов (в данном случае 2)
       if (skillCounts[skill] < 2) {
-        let count = parseInt(button.textContent);
+        let count = parseInt(counter.textContent);
         count++;
-        button.textContent = count;
+        counter.textContent = count;
         skillCounts[skill] = count;
 
       } else {
@@ -36,7 +39,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Обработка нажатия на кнопку "Сохранить" (опционально, это для тестирования)
   const saveButton = document.querySelector('.button');
   saveButton.addEventListener('click', () => {
-    console.log(skillCounts); // выводим результат в консоль
+
+    Object.keys(skillCounts).forEach(skill => {
+      console.log(skill)
+      userClasses[currentClass]['structure'][userEmail][skill] = skillCounts[skill];
+      console.log(userClasses)
+      //  window.location.href = './classes.html';
+    })
   });
 });
 
