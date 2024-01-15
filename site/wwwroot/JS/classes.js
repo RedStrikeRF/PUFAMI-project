@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 
-function drawClass(className, classSpecification) {
+function drawClass(id, className, classSpecification) {
   const button = document.createElement('button');
   const title = document.createElement('h3');
   const descr = document.createElement('p');
