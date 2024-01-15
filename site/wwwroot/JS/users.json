@@ -55,44 +55,36 @@
     "role": "ученик",
     "email": "test@test.ru"
   },
-  "xcfghjk@hgfdfghj": {
-    "avatar": 0,
-    "password": "hjfhdfjdf",
-    "surname": "jhgdhjk",
-    "name": "hjgfhjk",
-    "role": "ученик",
-    "email": "xcfghjk@hgfdfghj"
-  },
   "abrikos@mail.ru": {
     "avatar": 0,
     "password": "gggjdksjfs",
-    "surname": "Генадий",
-    "name": "Горин",
+    "surname": "Андрей",
+    "name": "Андреев",
     "role": "директор",
     "email": "abrikos@mail.ru"
   },
-  "jkdhfk@fdsf.ru": {
-    "avatar": 0,
-    "password": "dsfdsfds",
-    "surname": "fdfsd",
-    "name": "dsfds",
-    "role": "родитель",
-    "email": "jkdhfk@fdsf.ru"
-  },
-  "sddgfh@ghjkdsh": {
-    "avatar": 0,
-    "password": "hjkhdfkjhf",
-    "surname": "kjdhskfhkj",
-    "name": "jdkjsh",
-    "role": "директор",
-    "email": "sddgfh@ghjkdsh"
-  },
-  "fgdgfd@gfgfgfd": {
-    "avatar": 0,
-    "password": "fdgdfgdfg",
-    "surname": "dgdfgfdg",
-    "name": "gdfgfdg",
+  "email@email.ru": {
+    "avatar": 6,
+    "password": "првоыролаы",
+    "surname": "Учитель",
+    "name": "Александр",
     "role": "учитель",
-    "email": "fgdgfd@gfgfgfd"
+    "email": "email@email.ru"
+  },
+  "email@mail.ru": {
+    "avatar": 6,
+    "password": "рыолрлаы",
+    "surname": "Учитель",
+    "name": "Александр",
+    "role": "учитель",
+    "email": "email@mail.ru"
+  },
+  "email@gmail.ru": {
+    "avatar": 0,
+    "password": "овырадлы",
+    "surname": "Учитель",
+    "name": "Учитель",
+    "role": "учитель",
+    "email": "email@gmail.ru"
   }
 }

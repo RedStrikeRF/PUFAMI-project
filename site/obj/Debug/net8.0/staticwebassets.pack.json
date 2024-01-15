@@ -9,12 +9,20 @@
       "PackagePath": "staticwebassets\\JS\\addclass.js"
     },
     {
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\addmark.js",
+      "PackagePath": "staticwebassets\\JS\\addmark.js"
+    },
+    {
       "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\classes.js",
       "PackagePath": "staticwebassets\\JS\\classes.js"
     },
     {
       "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\classes.json",
       "PackagePath": "staticwebassets\\JS\\classes.json"
+    },
+    {
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\find_student.js",
+      "PackagePath": "staticwebassets\\JS\\find_student.js"
     },
     {
       "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\JS\\profile.js",
@@ -83,6 +91,10 @@
     {
       "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\add_link.css",
       "PackagePath": "staticwebassets\\css\\work_space\\add_link.css"
+    },
+    {
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\add_mark.css",
+      "PackagePath": "staticwebassets\\css\\work_space\\add_mark.css"
     },
     {
       "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\css\\work_space\\add_revie.css",
@@ -181,8 +193,40 @@
       "PackagePath": "staticwebassets\\image\\logo.jpg"
     },
     {
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\marks\\1.png",
+      "PackagePath": "staticwebassets\\image\\marks\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\marks\\2.png",
+      "PackagePath": "staticwebassets\\image\\marks\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\marks\\3.png",
+      "PackagePath": "staticwebassets\\image\\marks\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\marks\\4.png",
+      "PackagePath": "staticwebassets\\image\\marks\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\marks\\5.png",
+      "PackagePath": "staticwebassets\\image\\marks\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\marks\\6.png",
+      "PackagePath": "staticwebassets\\image\\marks\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\marks\\7.png",
+      "PackagePath": "staticwebassets\\image\\marks\\7.png"
+    },
+    {
       "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\parent.png",
       "PackagePath": "staticwebassets\\image\\parent.png"
+    },
+    {
+      "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\plus.svg",
+      "PackagePath": "staticwebassets\\image\\plus.svg"
     },
     {
       "Id": "C:\\Users\\Yurii\\source\\repos\\PUFAMI-project\\site\\wwwroot\\image\\student.png",
