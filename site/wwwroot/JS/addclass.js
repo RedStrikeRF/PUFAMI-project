@@ -4,69 +4,25 @@ document.querySelector('.form').addEventListener('submit', function(event) {
   // Получаем значения из полей формы
   const className = document.querySelector('input[name="class_name"]').value;
   const classData = document.querySelector('input[name="class"]').value;
-  const user = Object.keys(JSON.parse(localStorage.getItem("PUFAMIUser")))[0];
-  let userClasses = localStorage.getItem("PUFAMIUserClass");
-  let newClass = {};
-  let Class = {};
-  let id = 0;
-
-  fetch('../JS/classes.json')
-  .then(response => {
-    if (!response.ok) {
-      window.location.href = '../404.html'
-    }
-    return response.json();
-  })
-  .then(data => {
-    id = Object.keys(data).length;
-  })
-  .then(temp => {
-    newClass = {
-      "name": className,
-      "graduate": classData,
-      "owner": user,
-      "structure" : {},
-      "id": id
-    }
-    Class = JSON.stringify(newClass);
-    // Настройка запроса
-    const requestOptions = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: Class
-    };
   
-    // Отправка запроса на сервер
-    fetch('addclass', requestOptions)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        userClasses.id = {
-          "name":newClass.name,
-          "graduate":newClass.graduate,
-          "owner": newClass.owner,
-          "structure":newClass.structure,
-        };
-        localStorage.setItem('PUFAMICurrentClassId', JSON.stringify(id));
-        localStorage.setItem("PUFAMIUserClass", userClasses);
-        window.location.href = '../work_space/add_student.html'
-      })
-      .catch(error => {
-        // Обработка ошибок
-        console.error('Произошла ошибка:', error);
-        // Добавьте здесь обработку ошибок
-      });
-    }
-  )
-  .catch(error => {
-    console.error(error);
-  });
-
+  const allClasses = JSON.parse(localStorage.getItem('PUFAMIAllClassesMain'));
+  const owner = Object.keys(JSON.parse(localStorage.getItem('PUFAMIUser')))[0];
+  const userClasses = JSON.parse(localStorage.getItem("PUFAMIUserClass"));
+  let classCount = Object.keys(allClasses).length;
   
+  const newClass = {
+    "name": className,
+    "graduate": classData,
+    "owner": owner,
+    "structure" : {}
+  };
+  allClasses[classCount] = newClass;
+  console.log(allClasses)
+  userClasses[classCount] = newClass;
+  console.log(userClasses)
+
+  localStorage.setItem('PUFAMIAllClassesMain', JSON.stringify(allClasses));
+  localStorage.setItem('PUFAMIUserClass', JSON.stringify(userClasses));
+  localStorage.setItem('PUFAMICurrentClassId', classCount)
+  window.location.href = './add_student.html';
 });
