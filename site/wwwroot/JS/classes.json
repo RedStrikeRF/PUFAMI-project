@@ -13,6 +13,26 @@
         "book": 2,
         "storm": 3,
         "lethality": 3
+      },
+      "example2@example.com": {
+        "book": 4,
+        "main": 5,
+        "brain": 3
+      },
+      "example4@example.com": {
+        "book": 2,
+        "storm": 3,
+        "lethality": 3
+      },
+      "example5@example.com": {
+        "book": 4,
+        "main": 5,
+        "brain": 3
+      },
+      "example6@example.com": {
+        "book": 2,
+        "storm": 3,
+        "lethality": 3
       }
     }
   },
@@ -21,12 +41,42 @@
     "graduate": "9-ГЖ",
     "owner": "shubin152@gmail.com",
     "structure" : {
-      "example3@example.com": {
+      "shubin152@gmail.com": {
         "book": 4,
         "main": 5,
         "brain": 3
       },
       "example1@example.com": {
+        "book": 2,
+        "storm": 3,
+        "lethality": 3
+      },
+      "example3@example.com": {
+        "book": 4,
+        "main": 5,
+        "brain": 3
+      },
+      "abrikos@mail.ru": {
+        "book": 2,
+        "storm": 3,
+        "lethality": 3
+      },
+      "example2@example.com": {
+        "book": 4,
+        "main": 5,
+        "brain": 3
+      },
+      "example4@example.com": {
+        "book": 2,
+        "storm": 3,
+        "lethality": 3
+      },
+      "example5@example.com": {
+        "book": 4,
+        "main": 5,
+        "brain": 3
+      },
+      "example6@example.com": {
         "book": 2,
         "storm": 3,
         "lethality": 3
@@ -52,6 +102,23 @@
     "name": "умнички",
     "graduate": "1-Г",
     "owner": "example4@example.com",
+    "structure" : {
+      "example5@example.com": {
+        "book": 4,
+        "main": 5,
+        "brain": 3
+      },
+      "example6@example.com": {
+        "book": 2,
+        "storm": 3,
+        "lethality": 3
+      }
+    }
+  },
+  "4": {
+    "name": "лошки",
+    "graduate": "1-Г",
+    "owner": "shubin152@gmail.com",
     "structure" : {
       "example5@example.com": {
         "book": 4,

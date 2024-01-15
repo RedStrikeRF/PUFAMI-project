@@ -4,33 +4,25 @@ document.querySelector('.form').addEventListener('submit', function(event) {
   // Получаем значения из полей формы
   const className = document.querySelector('input[name="class_name"]').value;
   const classData = document.querySelector('input[name="class"]').value;
-
-  // Настройка запроса
-  const requestOptions = {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-       class_name: className,
-       class: classData 
-      })
+  
+  const allClasses = JSON.parse(localStorage.getItem('PUFAMIAllClassesMain'));
+  const owner = Object.keys(JSON.parse(localStorage.getItem('PUFAMIUser')))[0];
+  const userClasses = JSON.parse(localStorage.getItem("PUFAMIUserClass"));
+  let classCount = Object.keys(allClasses).length;
+  
+  const newClass = {
+    "name": className,
+    "graduate": classData,
+    "owner": owner,
+    "structure" : {}
   };
+  allClasses[classCount] = newClass;
+  console.log(allClasses)
+  userClasses[classCount] = newClass;
+  console.log(userClasses)
 
-  // Отправка запроса на сервер
-  fetch('addclass', requestOptions)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
-    .then(data => {
-      let classes = localStorage.getItem('PUFAMIUserClass');
-    })
-    .catch(error => {
-      // Обработка ошибок
-      console.error('Произошла ошибка:', error);
-      // Добавьте здесь обработку ошибок
-    });
+  localStorage.setItem('PUFAMIAllClassesMain', JSON.stringify(allClasses));
+  localStorage.setItem('PUFAMIUserClass', JSON.stringify(userClasses));
+  localStorage.setItem('PUFAMICurrentClassId', classCount)
+  window.location.href = './add_student.html';
 });
