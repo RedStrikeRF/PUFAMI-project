@@ -6,13 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   Object.keys(userClasses[currentClass]["structure"]).forEach(el => {
     if(allUser[el]) {
-      container.append(drawClass(allUser[el]["avatar"], allUser[el]["name"], allUser[el]["surname"]));
+      
+      container.append(drawClass(el, allUser[el]["avatar"], allUser[el]["name"], allUser[el]["surname"]));
     }
   })
 });
 
 
-function drawClass(avatar_number,name, surname) {
+function drawClass(email, avatar_number,name, surname) {
   const button = document.createElement('button');
   const avatar = document.createElement('img');
   const fullName = document.createElement('h3');
@@ -28,7 +29,7 @@ function drawClass(avatar_number,name, surname) {
 
   button.addEventListener('click', () => {
     localStorage.setItem("PUFAMICurrentStudent", email)
-    window.location.href = "../add_"
+    window.location.href = "../work_space/add_revie.html"
   });
 
   return button;
